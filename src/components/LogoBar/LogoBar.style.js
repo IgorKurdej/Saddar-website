@@ -5,7 +5,7 @@ import LogoImg from "../../assets/img/saddar_logo_425.png";
 export const LogoBarWrapper = styled.div`
   width: 100vw;
   height: 80px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 `;
@@ -16,7 +16,7 @@ export const HeaderImg = styled.img.attrs({ src: `${LogoImg}` })`
 
 export const FlagsWrapper = styled.div`
   position: absolute;
-  height: 80px;
+  height: 70px;
   width: 200px;
   right: 0;
   display: flex;
