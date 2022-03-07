@@ -1,8 +1,8 @@
 import React from 'react';
 import * as S from './LogoBar.style';
 
-const LogoBar = () => (
-    <S.LogoBarWrapper>
+const LogoBar = ({isHomePage, isScrollMove}) => (
+    <S.LogoBarWrapper isHomePage={isHomePage} isScrollMove={isScrollMove}>
         <S.HeaderImg />
         <S.FlagsWrapper>
             <S.Flag countryCode="PL" svg />

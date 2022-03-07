@@ -4,7 +4,7 @@ import SliderHome from "../SliderHome/SliderHome";
 
 const AboutUsSection = () => (
     <>
-        <S.Header>O nas</S.Header>
+        {/*<S.Header>O nas</S.Header>*/}
         <S.Wrapper>
             <S.LeftWrapper>
                 <S.TextWrapper>
@@ -25,11 +25,11 @@ const AboutUsSection = () => (
                 </S.TextWrapper>
             </S.LeftWrapper>
             <S.SliderWrapper>
-                <S.Bar height={'15%'} color={true} />
-                <S.Bar height={'10%'} />
-                <S.Bar height={'20%'} color={true} />
-                <S.Bar height={'15%'} />
-                <S.Bar height={'40%'} color={true} />
+                <S.Stripe height={'15%'} color={true} />
+                <S.Stripe height={'10%'} />
+                <S.Stripe height={'20%'} color={true} />
+                <S.Stripe height={'15%'} />
+                <S.Stripe height={'40%'} color={true} />
                 <S.SliderContent>
                     <SliderHome />
                 </S.SliderContent>

@@ -3,11 +3,15 @@ import ReactCountryFlag from "react-country-flag";
 import LogoImg from "../../assets/img/saddar_logo_425.png";
 
 export const LogoBarWrapper = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: ${props => props.isHomePage && 'fixed'};
+  top: 0;
+  background-color: ${({isHomePage, isScrollMove}) => isHomePage ? isScrollMove && 'white' : 'transparent'};
+  z-index: 3;
 `;
 
 export const HeaderImg = styled.img.attrs({ src: `${LogoImg}` })`

@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import ReactCountryFlag from "react-country-flag";
-import LogoImg from "../../assets/img/saddar_logo_425.png";
 
 export const Wrapper = styled.div`
   height: 100%;
@@ -21,7 +19,8 @@ export const ContentWrapper = styled.div`
 export const HeaderImg = styled.img.attrs(props => ({
     src: props.src,
 }))`
-    height: 400px;
+    //height: 50%;
+    width: 40%;
 `;
 
 export const DotsWrapper = styled.div`

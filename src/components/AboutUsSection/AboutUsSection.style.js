@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
+  //height: 50vh;
   display: flex;
+  margin-bottom: 100px;
   //align-items: center;
   //justify-content: center;
 `
@@ -16,12 +18,13 @@ export const LeftWrapper = styled.div`
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 `
 
 export const TextWrapper = styled.div`
-  width: 70%;
+  width: 60%;
   text-align: left;
+  padding-right: 100px;
   
   h2 {
     font-size: 30px;
@@ -45,6 +48,8 @@ export const TextWrapper = styled.div`
 `;
 
 export const SliderWrapper = styled.div`
+  margin-left: 100px;
+  max-width: 800px;
   width: 50%;
   position: relative;
 `;
@@ -56,7 +61,7 @@ export const SliderContent = styled.div`
   height: 100%;
 `
 
-export const Bar = styled.div`
+export const Stripe = styled.div`
   width: 100%;
   background-color: ${(props => props.color ? '#f6f6f6' : 'transparent')};
   height: ${(props => `${props.height}`)};
