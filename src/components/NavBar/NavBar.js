@@ -3,7 +3,7 @@ import * as S from './Navbar.style';
 
 const NavBar = ({isHomePage, isScrollMove}) => {
     return (
-        <S.Wrapper isScrollMove={isScrollMove}>
+        <S.Wrapper isHomePage={isHomePage} isScrollMove={isScrollMove}>
             <S.Ul>
                 <S.Li>O nas</S.Li>
                 <S.Li>Nasze specjalizacje</S.Li>

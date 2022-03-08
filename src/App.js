@@ -1,13 +1,13 @@
 import React from 'react';
 import HomeView from "./views/HomeView";
 import './App.css';
-import AboutUp from "./views/AboutUp";
+import AboutUsView from "./views/AboutUsView";
 
 const App = () => {
     return (
         <div className='App'>
           {/*<HomeView />*/}
-          <AboutUp />
+          <AboutUsView />
         </div>
     );
 };

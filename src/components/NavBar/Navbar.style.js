@@ -3,11 +3,23 @@ import styled from 'styled-components';
 export const Wrapper = styled.nav`
   width: 100%;
   height: 80px;
-  //background-color: ${({isHomePage, isScrollMove}) => isScrollMove ? 'black' : 'transparent'};
-  background-color: #282c34;
+  background-color: ${props => props.isHomePage ? ( props.isScrollMove ? 'black' : 'transparent') : 'black'};
+  //background-color: #282c34;
   position: ${props => props.isHomePage && 'fixed'};
   top: 80px;
   z-index: 4;
+  
+  animation: ${props => props.isScrollMove && 'appear .75s ease'};
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
 `;
 
 export const Ul = styled.ul`

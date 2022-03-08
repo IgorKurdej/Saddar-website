@@ -1,16 +1,35 @@
 import React from 'react';
 import * as S from './PictureWithText.style';
+import img1 from '../../assets/img/AboutUs/pexels-nikolai-ulltang-323933.jpg'
 
-const PictureWithText = () => {
+const PictureWithText = ({ direction, header, mainHeader, text }) => {
     return (
         <S.Wrapper>
-            <S.ContentWrapper>
-                <S.TextWrapper>
-                    <S.Header>Nasza historia</S.Header>
-                    <S.MainHeader>Przemiana pomysłu w wynalazek</S.MainHeader>
-                    <S.Text>Nie ciekawi Cię jak się tu znaleźliśmy?</S.Text>
-                </S.TextWrapper>
-            </S.ContentWrapper>
+
+            {
+                direction === 'imgRight' ? (
+                    <S.ContentWrapper>
+                        <S.TextWrapper>
+                            <S.Stripe />
+                            <S.Header>{header}</S.Header>
+                            <S.MainHeader>{mainHeader}</S.MainHeader>
+                            <S.Text>{text}</S.Text>
+                        </S.TextWrapper>
+                        <S.Img src={img1} />
+                    </S.ContentWrapper>
+                ) : (
+                    <S.ContentWrapper>
+                        <S.Img src={img1} />
+                        <S.TextWrapper direction='left'>
+                            <S.Stripe />
+                            <S.Header>{header}</S.Header>
+                            <S.MainHeader direction='left'>{mainHeader}</S.MainHeader>
+                            <S.Text>{text}</S.Text>
+                        </S.TextWrapper>
+                    </S.ContentWrapper>
+                )
+            }
+
         </S.Wrapper>
     );
 };

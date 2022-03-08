@@ -12,6 +12,17 @@ export const LogoBarWrapper = styled.div`
   top: 0;
   background-color: ${({isHomePage, isScrollMove}) => isHomePage ? isScrollMove && 'white' : 'transparent'};
   z-index: 3;
+  
+  animation: ${props => props.isScrollMove && 'appear .75s ease'};
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 export const HeaderImg = styled.img.attrs({ src: `${LogoImg}` })`
