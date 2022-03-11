@@ -29,7 +29,7 @@ const HomeView = () => {
     <Wrapper>
       <LogoBar isHomePage={true} isScrollMove={isScrollMove} />
       <NavBar isHomePage={true} isScrollMove={isScrollMove} />
-      <SectionVideo />
+      {/*<SectionVideo />*/}
       <AboutUsSection />
       <SectionOurSolutions />
       <SectionOurTeam />
