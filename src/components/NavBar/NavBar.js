@@ -9,7 +9,9 @@ const NavBar = ({ isHomePage, isScrollMove }) => {
         <S.Li>
           <Link to="/about">O nas</Link>
         </S.Li>
-        <S.Li>Nasze specjalizacje</S.Li>
+        <S.Li>
+          <Link to="/specialization">Nasze specjalizacje</Link>
+        </S.Li>
         <S.Li>Know-how</S.Li>
         <S.Li>
           <Link to="/products">Produkty</Link>
