@@ -20,7 +20,9 @@ const NavBar = ({ isHomePage, isScrollMove }) => {
         <S.Li>Partnerzy handlowi</S.Li>
         <S.Li>Aktualności</S.Li>
         <S.Li>Instrukcja</S.Li>
-        <S.Li>Kontakt</S.Li>
+        <S.Li>
+          <Link to="/contact">Kontakt</Link>
+        </S.Li>
       </S.Ul>
     </S.Wrapper>
   );

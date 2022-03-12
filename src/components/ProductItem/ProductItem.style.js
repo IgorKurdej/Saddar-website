@@ -1,11 +1,16 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ProductWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+  margin: 20px 40px;
   //background-color: gray;
+`;
+
+export const A = styled(Link)`
+  //background-color: #282c34;
 `;
 
 export const Wrapper = styled.div`
@@ -17,6 +22,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   position: relative;
   z-index: 2;
+  margin-bottom: 20px;
 `;
 
 export const Background = styled.div`
@@ -55,4 +61,6 @@ export const Img = styled.img`
 
 export const Name = styled.p`
   font-size: 24px;
+  margin: 0;
+  text-align: center;
 `;

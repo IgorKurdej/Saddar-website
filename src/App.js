@@ -6,6 +6,7 @@ import AboutUsView from "./views/AboutUsView";
 import ProductsView from "./views/ProductsView";
 import SpecializationView from "./views/SpecializationView";
 import AnchorWithDetails from "./components/AnchorWithDetails/AnchorWithDetails";
+import ContactView from "./views/ContactView";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
           <Route path="/about" element={<AboutUsView />} />
           <Route path="/specialization" element={<SpecializationView />} />
           <Route path="/products" element={<ProductsView />} />
-          <Route path="/product/:id" element={<AnchorWithDetails />} />
+          <Route path="/products/:id" element={<AnchorWithDetails />} />
+          <Route path="/contact" element={<ContactView />} />
         </Routes>
       </Router>
     </div>

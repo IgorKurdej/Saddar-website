@@ -27,12 +27,14 @@ const Products = () => {
           // categories.map(category => console.log(category))
         }
       </S.Categories>
-      {/*<S.ProductsList>*/}
-      {/*    <AnchorWithDetails />*/}
-      {/*    <AnchorWithDetails />*/}
-      {/*    <AnchorWithDetails />*/}
-      {/*    <AnchorWithDetails />*/}
-      {/*</S.ProductsList>*/}
+      <S.ProductsList>
+        <ProductItem />
+        <ProductItem />
+        <ProductItem />
+        <ProductItem />
+        <ProductItem />
+        <ProductItem />
+      </S.ProductsList>
     </S.Wrapper>
   );
 };

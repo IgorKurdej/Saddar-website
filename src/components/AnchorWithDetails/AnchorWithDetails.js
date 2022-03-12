@@ -118,8 +118,9 @@ const AnchorWithDetails = () => {
 };
 
 const Wrapper = styled.div`
-  margin: 80px 0;
+  margin: 50px 0;
   max-width: 80rem;
+  min-height: 670px;
   width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;

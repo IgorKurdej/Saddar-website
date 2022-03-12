@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 export const Categories = styled.div`
@@ -20,10 +24,10 @@ export const Header = styled.div`
 
 export const ProductsList = styled.div`
   //width: 900px;
-
+  max-width: 1200px;
   margin: 80px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 `;
