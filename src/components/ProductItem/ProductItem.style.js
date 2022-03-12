@@ -5,12 +5,12 @@ export const ProductWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+  //background-color: gray;
 `;
 
 export const Wrapper = styled.div`
   width: 220px;
   height: 350px;
-  background-color: transparent;
   border: 12px solid #04a23c;
   display: flex;
   align-items: center;

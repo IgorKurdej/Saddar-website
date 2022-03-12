@@ -5,6 +5,7 @@ import "./App.css";
 import AboutUsView from "./views/AboutUsView";
 import ProductsView from "./views/ProductsView";
 import SpecializationView from "./views/SpecializationView";
+import AnchorWithDetails from "./components/AnchorWithDetails/AnchorWithDetails";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/about" element={<AboutUsView />} />
           <Route path="/specialization" element={<SpecializationView />} />
           <Route path="/products" element={<ProductsView />} />
+          <Route path="/product/:id" element={<AnchorWithDetails />} />
         </Routes>
       </Router>
     </div>

@@ -24,7 +24,8 @@ const PictureWithText = ({
         </S.ContentWrapper>
       ) : (
         <S.ContentWrapper>
-          <S.Img src={src} position={position} />
+          {/*<S.Img src={src} position={position} />*/}
+          <S.Img src={src} />
           <S.TextWrapper direction="left">
             <S.Stripe />
             <S.Header>{header}</S.Header>

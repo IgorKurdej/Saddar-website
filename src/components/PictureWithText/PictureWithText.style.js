@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const ContentWrapper = styled.div`
-  //width: 100%;
+  width: 100%;
   //height: 400px;
-  max-width: 1200px;
+  //max-width: 100%;
+
   margin: 50px 0;
   display: flex;
   flex-wrap: wrap;
@@ -20,6 +21,7 @@ export const ContentWrapper = styled.div`
 export const TextWrapper = styled.div`
   width: 50%;
   margin: 30px 0;
+  //padding: 0 10px;
   display: flex;
   flex-direction: column;
   align-items: ${(props) =>
@@ -54,12 +56,18 @@ export const Text = styled.p`
 `;
 
 export const Img = styled.div`
-  height: 380px;
-  max-width: 550px;
-  width: 100%;
-  margin: 30px 20px;
+  height: 350px;
+  min-width: 400px;
+  width: 50%;
+  //padding: 0 10px;
+
+  //height: 50%;
+  //margin: 30px 10px;
 
   background-image: ${({ src }) => `url(${src})`};
   background-size: cover;
-  background-position: ${({ position }) => position && "0 -280px"};
+  background-repeat: no-repeat;
+  // background-position: ${({ position }) =>
+    position ? "0 -300px" : "center"};
+  background-position: center;
 `;

@@ -17,12 +17,12 @@ const SpecializationView = () => {
       <LogoBar />
       <NavBar />
       <h1>Nasze specjalizacje</h1>
-      <span>Spójrz w czym możemy Ci pomóc</span>
-      <ImageWrapper>
-        <Image src={img2} />
-        <Image src={img1} />
-        <Image src={img3} />
-      </ImageWrapper>
+      {/*<span>Spójrz w czym możemy Ci pomóc</span>*/}
+      {/*<ImageWrapper>*/}
+      {/*  <Image src={img2} />*/}
+      {/*  <Image src={img1} />*/}
+      {/*  <Image src={img3} />*/}
+      {/*</ImageWrapper>*/}
       <ImageWrapper>
         <PictureWithText
           direction="imgLeft"

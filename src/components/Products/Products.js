@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./Products.style";
 import img from "../../assets/img/rotator_2a.jpg";
-import ProductItem from "./ProductItem/ProductItem";
+import ProductItem from "../../components/ProductItem/ProductItem";
 import CategoryItem from "./CategoryItem/CategoryItem";
 
 const categories = [
@@ -28,10 +28,10 @@ const Products = () => {
         }
       </S.Categories>
       {/*<S.ProductsList>*/}
-      {/*    <ProductItem />*/}
-      {/*    <ProductItem />*/}
-      {/*    <ProductItem />*/}
-      {/*    <ProductItem />*/}
+      {/*    <AnchorWithDetails />*/}
+      {/*    <AnchorWithDetails />*/}
+      {/*    <AnchorWithDetails />*/}
+      {/*    <AnchorWithDetails />*/}
       {/*</S.ProductsList>*/}
     </S.Wrapper>
   );
