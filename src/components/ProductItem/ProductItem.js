@@ -4,6 +4,10 @@ import kotwa from "../../assets/img/products/psk wsp 4x4.png";
 import { Link } from "react-router-dom";
 
 const ProductItem = () => {
+  // const d = new Date("2022-02-01T09:00:00.000Z");
+  // console.log(d.getUTCHours()); // Hours
+  // console.log(d.getUTCMinutes());
+
   return (
     <S.ProductWrapper>
       <S.A to="/products/2">

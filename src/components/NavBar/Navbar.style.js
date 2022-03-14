@@ -1,16 +1,24 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.nav`
   width: 100%;
-  height: 80px;
-  background-color: ${props => props.isHomePage ? ( props.isScrollMove ? 'black' : 'transparent') : 'black'};
+  min-height: 60px;
+  background-color: ${(props) =>
+    props.isHomePage
+      ? props.isScrollMove
+        ? "black"
+        : "transparent"
+      : "black"};
   //background-color: #282c34;
-  position: ${props => props.isHomePage && 'fixed'};
-  top: 80px;
+  position: ${(props) => props.isHomePage && "fixed"};
+  top: 70px;
   z-index: 4;
-  
-  animation: ${props => props.isScrollMove && 'appear .75s ease'};
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: ${(props) => props.isScrollMove && "appear .75s ease"};
+
   @keyframes appear {
     from {
       opacity: 0;
@@ -19,7 +27,6 @@ export const Wrapper = styled.nav`
       opacity: 1;
     }
   }
-  
 `;
 
 export const Ul = styled.ul`
@@ -29,15 +36,17 @@ export const Ul = styled.ul`
   height: 100%;
   margin: 0;
   padding: 0;
-`
+`;
 
 export const Li = styled.li`
   color: #fff;
   list-style: none;
   margin: 0 20px;
-  font-size: 24px;
-  
+  //font-size: clamp(24px, 16px);
+  font-size: 20px;
+  text-decoration: none;
+
   :hover {
     color: #04a23c;
   }
-`
+`;

@@ -1,20 +1,21 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import ReactCountryFlag from "react-country-flag";
 import LogoImg from "../../assets/img/saddar_logo_425.png";
 
 export const LogoBarWrapper = styled.div`
   width: 100%;
-  height: 80px;
+  min-height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: ${props => props.isHomePage && 'fixed'};
+  position: ${(props) => props.isHomePage && "fixed"};
   top: 0;
-  background-color: ${({isHomePage, isScrollMove}) => isHomePage ? isScrollMove && 'white' : 'transparent'};
+  background-color: ${({ isHomePage, isScrollMove }) =>
+    isHomePage ? isScrollMove && "white" : "transparent"};
   z-index: 3;
-  
-  animation: ${props => props.isScrollMove && 'appear .75s ease'};
-  
+
+  animation: ${(props) => props.isScrollMove && "appear .75s ease"};
+
   @keyframes appear {
     from {
       opacity: 0;
@@ -26,7 +27,7 @@ export const LogoBarWrapper = styled.div`
 `;
 
 export const HeaderImg = styled.img.attrs({ src: `${LogoImg}` })`
-    height: 60px;
+  height: 60px;
 `;
 
 export const FlagsWrapper = styled.div`
@@ -37,10 +38,9 @@ export const FlagsWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;
 
 export const Flag = styled(ReactCountryFlag)`
   font-size: 1.4em;
   margin-right: 10px;
-`
-
+`;
