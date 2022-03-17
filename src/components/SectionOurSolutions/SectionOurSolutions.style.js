@@ -1,24 +1,40 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Container = styled.div`
+  background-color: #f6f6f6;
   width: 100%;
+  display: flex;
+  //align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  padding: 40px 0;
+`;
+
+export const Wrapper = styled.div`
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1 {
+    margin-bottom: 50px;
+  }
 `;
 
 export const ImagesWrapper = styled.div`
-  width: 90%;
+  //width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  //background-color: #282c34;
 `;
 
 export const Image = styled.div`
-  flex: 1;
-  margin: 15px;
-  max-width: 380px;
-  height: 600px;
+  //flex: 1;
+  margin: 10px;
+  width: 380px;
+  min-height: 600px;
   background-image: ${(props) => `url(${props.src})`};
   background-size: cover;
   filter: brightness(40%);
@@ -27,6 +43,7 @@ export const Image = styled.div`
   align-items: flex-end;
   justify-content: flex-end;
   flex-wrap: wrap;
+  text-decoration: none;
 
   :hover {
     filter: brightness(80%);
@@ -37,6 +54,7 @@ export const Image = styled.div`
     font-size: 34px;
     //font-weight: 700;
     margin: 10px 20px;
+
     //margin: 0;
 
     //:hover {

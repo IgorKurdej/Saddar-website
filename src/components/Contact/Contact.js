@@ -86,6 +86,7 @@ const Image = styled.div`
   min-height: 400px;
   width: 100%;
   background-image: url(${img});
+  //background-position-y: -350px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

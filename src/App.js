@@ -7,6 +7,7 @@ import ProductsView from "./views/ProductsView";
 import SpecializationView from "./views/SpecializationView";
 import AnchorWithDetails from "./components/AnchorWithDetails/AnchorWithDetails";
 import ContactView from "./views/ContactView";
+import KnowHowView from "./views/KnowHowView";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/products" element={<ProductsView />} />
           <Route path="/products/:id" element={<AnchorWithDetails />} />
           <Route path="/contact" element={<ContactView />} />
+          <Route path="/know-how" element={<KnowHowView />} />
         </Routes>
       </Router>
     </div>

@@ -1,26 +1,26 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-`
+  //justify-content: space-between;
+  //flex-direction: column;
+`;
 
 export const ContentWrapper = styled.div`
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
   height: 100%;
-`
+`;
 
-export const HeaderImg = styled.img.attrs(props => ({
-    src: props.src,
+export const HeaderImg = styled.img.attrs((props) => ({
+  src: props.src,
 }))`
-    //height: 50%;
-    width: 40%;
+  //height: 50%;
+  width: 40%;
 `;
 
 export const DotsWrapper = styled.div`
@@ -34,7 +34,8 @@ export const DotsWrapper = styled.div`
 export const Dot = styled.div`
   height: 10px;
   width: 10px;
-  border: ${props => props.className === 'active' ? '4px solid #048c44' : '2px solid black'};
+  border: ${(props) =>
+    props.className === "active" ? "4px solid #048c44" : "2px solid black"};
   border-radius: 50%;
   cursor: pointer;
 `;

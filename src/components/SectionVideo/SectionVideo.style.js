@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   margin-bottom: 100px;
   //height: calc(100vh - 80px);
   height: 100vh;
+  width: 100vw;
 `;
 
 export const Video = styled.video`

@@ -11,6 +11,9 @@ import SectionVideo from "../components/SectionVideo/SectionVideo";
 
 const Wrapper = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const HomeView = () => {

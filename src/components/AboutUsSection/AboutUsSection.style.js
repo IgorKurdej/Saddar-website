@@ -1,40 +1,41 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 100%;
+  width: 1200px;
   //height: 50vh;
   display: flex;
+  align-items: center;
   margin-bottom: 100px;
   //align-items: center;
-  //justify-content: center;
-`
+  justify-content: center;
+`;
 
 export const Header = styled.h1`
   //margin: 0;
   font-size: 40px;
-`
+`;
 
 export const LeftWrapper = styled.div`
-  width: 50%;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-`
+`;
 
 export const TextWrapper = styled.div`
-  width: 60%;
+  width: 100%;
   text-align: left;
-  padding-right: 100px;
-  
+  //padding-right: 100px;
+
   h2 {
     font-size: 30px;
     margin: 0;
   }
-  
+
   p {
     font-size: 20px;
   }
-  
+
   button {
     font-size: 20px;
     padding: 8px 28px;
@@ -48,9 +49,10 @@ export const TextWrapper = styled.div`
 `;
 
 export const SliderWrapper = styled.div`
-  margin-left: 100px;
+  //margin-left: 100px;
   max-width: 800px;
-  width: 50%;
+  max-height: 800px;
+  flex: 1;
   position: relative;
 `;
 
@@ -59,10 +61,10 @@ export const SliderContent = styled.div`
   top: 0;
   width: 100%;
   height: 100%;
-`
+`;
 
 export const Stripe = styled.div`
   width: 100%;
-  background-color: ${(props => props.color ? '#f6f6f6' : 'transparent')};
-  height: ${(props => `${props.height}`)};
-`
+  background-color: ${(props) => (props.color ? "#f6f6f6" : "transparent")};
+  height: ${(props) => `${props.height}`};
+`;
