@@ -9,6 +9,7 @@ const PictureWithText = ({
   children,
   src,
   position,
+  button,
 }) => {
   return (
     <S.Wrapper>
@@ -19,6 +20,7 @@ const PictureWithText = ({
             <S.Header>{header}</S.Header>
             <S.MainHeader>{mainHeader}</S.MainHeader>
             <S.Text>{children}</S.Text>
+            {button && <S.DetailsBtn>szczegóły</S.DetailsBtn>}
           </S.TextWrapper>
           <S.Img src={src} />
         </S.ContentWrapper>
@@ -31,6 +33,7 @@ const PictureWithText = ({
             <S.Header>{header}</S.Header>
             <S.MainHeader direction="left">{mainHeader}</S.MainHeader>
             <S.Text alignRight>{children}</S.Text>
+            {button && <S.DetailsBtn>szczegóły</S.DetailsBtn>}
           </S.TextWrapper>
         </S.ContentWrapper>
       )}

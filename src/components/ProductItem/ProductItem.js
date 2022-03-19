@@ -9,14 +9,12 @@ const ProductItem = () => {
   // console.log(d.getUTCMinutes());
 
   return (
-    <S.ProductWrapper>
-      <S.A to="/products/2">
-        <S.Wrapper>
-          <S.Background />
-          <S.Img src={kotwa} />
-        </S.Wrapper>
-        <S.Name>PSK WST</S.Name>
-      </S.A>
+    <S.ProductWrapper as={Link} to="/2">
+      <S.Wrapper>
+        <S.Background />
+        <S.Img src={kotwa} />
+      </S.Wrapper>
+      <S.Name>PSK WST</S.Name>
     </S.ProductWrapper>
   );
 };

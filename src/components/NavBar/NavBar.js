@@ -20,9 +20,13 @@ const NavBar = ({ isHomePage, isScrollMove }) => {
         <S.Li as={Link} to="/products">
           Produkty
         </S.Li>
-        <S.Li>Usługi</S.Li>
+        <S.Li as={Link} to="/services">
+          Usługi
+        </S.Li>
         <S.Li>Partnerzy</S.Li>
-        <S.Li>Aktualności</S.Li>
+        <S.Li as={Link} to="/news">
+          Aktualności
+        </S.Li>
         <S.Li>Instrukcja</S.Li>
         <S.Li as={Link} to="/contact">
           Kontakt

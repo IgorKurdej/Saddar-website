@@ -5,12 +5,10 @@ export const ProductWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 40px;
+  margin: 20px 40px 50px;
+  text-decoration: none;
+  color: black;
   //background-color: gray;
-`;
-
-export const A = styled(Link)`
-  //background-color: #282c34;
 `;
 
 export const Wrapper = styled.div`
@@ -61,6 +59,7 @@ export const Img = styled.img`
 
 export const Name = styled.p`
   font-size: 24px;
-  margin: 0;
+  margin-top: 15px;
   text-align: center;
+  text-decoration: none;
 `;

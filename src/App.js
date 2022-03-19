@@ -8,6 +8,9 @@ import SpecializationView from "./views/SpecializationView";
 import AnchorWithDetails from "./components/AnchorWithDetails/AnchorWithDetails";
 import ContactView from "./views/ContactView";
 import KnowHowView from "./views/KnowHowView";
+import NewsView from "./views/NewsView";
+import NewsItemDetails from "./components/News/NewsItemDetails/NewsItemDetails";
+import ServicesView from "./views/ServicesView";
 
 const App = () => {
   return (
@@ -21,6 +24,9 @@ const App = () => {
           <Route path="/products/:id" element={<AnchorWithDetails />} />
           <Route path="/contact" element={<ContactView />} />
           <Route path="/know-how" element={<KnowHowView />} />
+          <Route path="/news" element={<NewsView />} />
+          <Route path="/news/:id" element={<NewsItemDetails />} />
+          <Route path="/services" element={<ServicesView />} />
         </Routes>
       </Router>
     </div>

@@ -20,7 +20,7 @@ const ContactItem = ({ position, name, email, phone }) => {
 const Wrapper = styled.div`
   width: 300px;
   //max-width: 350px;
-  min-height: 150px;
+  min-height: 120px;
   margin: 5px 30px;
   display: flex;
   flex-direction: column;

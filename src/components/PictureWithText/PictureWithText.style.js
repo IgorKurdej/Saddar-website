@@ -71,3 +71,12 @@ export const Img = styled.div`
     position ? "0 -300px" : "center"};
   background-position: center;
 `;
+
+export const DetailsBtn = styled.div`
+  font-size: 22px;
+  color: forestgreen;
+  //background-color: forestgreen;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid forestgreen;
+`;
