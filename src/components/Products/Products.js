@@ -3,6 +3,8 @@ import * as S from "./Products.style";
 import img from "../../assets/img/rotator_2a.jpg";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import CategoryItem from "./CategoryItem/CategoryItem";
+import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
+import TitleWithIcon from "../TitleWithIcon/TitleWithIcon";
 
 const categories = [
   "Wbijane",
@@ -18,7 +20,7 @@ const categories = [
 const Products = () => {
   return (
     <S.Wrapper>
-      <S.Header>Produkty</S.Header>
+      <TitleWithIcon title="Produkty" icon={ShoppingBasketOutlinedIcon} />
       <S.Categories>
         {
           categories.map((category) => (

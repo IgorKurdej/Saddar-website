@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 20px 0 40px;
 `;
 
 export const ContentWrapper = styled.div`
@@ -11,17 +12,18 @@ export const ContentWrapper = styled.div`
   //height: 400px;
   //max-width: 100%;
 
-  margin: 50px 0;
+  //margin: 50px 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: ${(props) => (props.direction ? "wrap-reverse" : "wrap")};
   justify-content: center;
   align-items: center;
 `;
 
 export const TextWrapper = styled.div`
-  width: 50%;
-  margin: 30px 0;
-  //padding: 0 10px;
+  //width: 50%;
+  flex: 1;
+  //margin: 30px 0;
+  //padding: 20px 30px;
   display: flex;
   flex-direction: column;
   align-items: ${(props) =>
@@ -37,15 +39,14 @@ export const Stripe = styled.div`
 
 export const Header = styled.p`
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 300;
   margin: 0;
   padding-bottom: 10px;
 `;
 
 export const MainHeader = styled.h1`
   font-size: 48px;
-  margin: 0;
-  padding-bottom: 40px;
+  margin-bottom: 30px;
   text-align: ${(props) => (props.direction === "left" ? "right" : "left")};
 `;
 
@@ -58,7 +59,8 @@ export const Text = styled.p`
 export const Img = styled.div`
   height: 350px;
   min-width: 400px;
-  width: 50%;
+  flex: 1;
+  //margin: 20px 30px;
   //padding: 0 10px;
 
   //height: 50%;
@@ -72,11 +74,13 @@ export const Img = styled.div`
   background-position: center;
 `;
 
-export const DetailsBtn = styled.div`
-  font-size: 22px;
-  color: forestgreen;
-  //background-color: forestgreen;
-  padding: 10px 20px;
+export const DetailsBtn = styled.button`
+  font-size: 18px;
+  color: #fff;
+  background-color: forestgreen;
+  padding: 8px 25px;
   border-radius: 10px;
   border: 2px solid forestgreen;
+  margin-top: 30px;
+  cursor: pointer;
 `;

@@ -9,7 +9,7 @@ const ProductItem = () => {
   // console.log(d.getUTCMinutes());
 
   return (
-    <S.ProductWrapper as={Link} to="/2">
+    <S.ProductWrapper as={Link} to="/products/2">
       <S.Wrapper>
         <S.Background />
         <S.Img src={kotwa} />

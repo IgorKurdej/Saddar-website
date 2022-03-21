@@ -213,7 +213,7 @@ const SizeDesc = styled.p`
 `;
 
 const ButtonsWrapper = styled.div`
-  margin-top: 30px;
+  margin: 30px 0;
   max-width: 400px;
 `;
 
@@ -236,6 +236,7 @@ const Title = styled.p`
 const Table = styled.table`
   border-collapse: collapse;
   max-width: 400px;
+  margin-bottom: 30px;
 `;
 
 const TableRow = styled.tr`
@@ -255,7 +256,7 @@ const Ul = styled.ul`
 const Description = styled.p`
   font-size: 18px;
   padding: 0;
-  margin: 0;
+  margin-bottom: 30px;
 `;
 
 export default AnchorWithDetails;

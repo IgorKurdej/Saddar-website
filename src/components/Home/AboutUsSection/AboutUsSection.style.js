@@ -24,22 +24,21 @@ export const LeftWrapper = styled.div`
 
 export const TextWrapper = styled.div`
   width: 100%;
-  text-align: left;
-  //padding-right: 100px;
 
   h2 {
     font-size: 30px;
-    margin: 0;
+    margin-bottom: 20px;
   }
 
   p {
     font-size: 20px;
+    margin-bottom: 5px;
   }
 
   button {
-    font-size: 20px;
+    font-size: 18px;
     padding: 8px 28px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 5px;
     border: 2px solid #048c44;
     cursor: pointer;

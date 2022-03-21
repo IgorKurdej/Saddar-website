@@ -11,7 +11,7 @@ export const TextContent = styled.div`
   //margin-bottom: 40px;
   font-size: 20px;
   //margin: 40px 30px;
-  margin: 40px 20px;
+  margin: 40px 30px;
 
   @media (max-width: 950px) {
     margin: 20px 100px;

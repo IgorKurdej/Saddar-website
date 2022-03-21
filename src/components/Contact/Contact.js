@@ -7,6 +7,7 @@ import img from "../../assets/img/contact/luca-bravo-fPoSK5XeyHw-unsplash.jpg";
 import Footer from "../Footer/Footer";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import CallIcon from "@mui/icons-material/Call";
 
 const contacts = [
   {
@@ -56,7 +57,7 @@ const Contact = () => {
         <ContactWrapper>
           <HeaderWrapper>
             <Header>Skontaktuj się z nami</Header>
-            <CallOutlinedIcon />
+            <CallIcon />
           </HeaderWrapper>
           <Wrapper>
             {contacts.map((item) => (

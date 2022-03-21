@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #f6f6f6;
+  //background-color: #f6f6f6;
   width: 100%;
   display: flex;
   //align-items: center;
   justify-content: center;
-  margin: 40px 0;
+  margin: 40px;
   padding: 40px 0;
 `;
 
 export const Wrapper = styled.div`
-  max-width: 1200px;
+  //max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,6 +30,10 @@ export const ImagesWrapper = styled.div`
   //background-color: #282c34;
 `;
 
+export const ImageWrapper = styled.div`
+  position: relative;
+`;
+
 export const Image = styled.div`
   //flex: 1;
   margin: 10px;
@@ -37,7 +41,7 @@ export const Image = styled.div`
   min-height: 600px;
   background-image: ${(props) => `url(${props.src})`};
   background-size: cover;
-  filter: brightness(40%);
+  filter: brightness(50%);
   transition: 0.5s ease;
   display: flex;
   align-items: flex-end;
@@ -46,19 +50,36 @@ export const Image = styled.div`
   text-decoration: none;
 
   :hover {
-    filter: brightness(80%);
+    opacity: 1;
+    filter: brightness(100%);
   }
 
-  p {
-    color: #fff;
-    font-size: 34px;
-    //font-weight: 700;
-    margin: 10px 20px;
+  //::after {
+  //  content: "Budownictwo";
+  //  color: white;
+  //  font-size: 32px;
+  //}
 
-    //margin: 0;
+  //p {
+  //  color: #fff;
+  //  font-size: 34px;
+  //  //font-weight: 700;
+  //  margin: 10px 20px;
+  //  position: absolute;
+  //  //color: black;
+  //  //margin: 0;
+  //
+  //  //:hover {
+  //  //  color: black;
+  //  //}
+  //}
+`;
 
-    //:hover {
-    //  color: black;
-    //}
-  }
+export const ImageText = styled.p`
+  position: absolute;
+  z-index: 5;
+  font-size: 30px;
+  color: white;
+  bottom: 20px;
+  right: 30px;
 `;

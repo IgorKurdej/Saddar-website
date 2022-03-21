@@ -14,13 +14,13 @@ const PictureWithText = ({
   return (
     <S.Wrapper>
       {direction === "imgRight" ? (
-        <S.ContentWrapper>
+        <S.ContentWrapper direction>
           <S.TextWrapper>
             <S.Stripe />
             <S.Header>{header}</S.Header>
             <S.MainHeader>{mainHeader}</S.MainHeader>
             <S.Text>{children}</S.Text>
-            {button && <S.DetailsBtn>szczegóły</S.DetailsBtn>}
+            {button && <S.DetailsBtn>{button}</S.DetailsBtn>}
           </S.TextWrapper>
           <S.Img src={src} />
         </S.ContentWrapper>
@@ -33,7 +33,7 @@ const PictureWithText = ({
             <S.Header>{header}</S.Header>
             <S.MainHeader direction="left">{mainHeader}</S.MainHeader>
             <S.Text alignRight>{children}</S.Text>
-            {button && <S.DetailsBtn>szczegóły</S.DetailsBtn>}
+            {button && <S.DetailsBtn>{button}</S.DetailsBtn>}
           </S.TextWrapper>
         </S.ContentWrapper>
       )}
