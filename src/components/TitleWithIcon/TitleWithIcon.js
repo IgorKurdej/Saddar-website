@@ -15,7 +15,12 @@ const TitleWithIcon = ({ title, icon: Icon }) => {
 };
 
 const Wrapper = styled.div`
-  margin-top: 40px;
+  width: 100%;
+  //padding: 20px 0;
+
+  @media (max-width: 1200px) {
+    padding: 0 15px;
+  }
 `;
 
 const Title = styled.p`

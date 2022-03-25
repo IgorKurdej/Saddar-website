@@ -12,7 +12,7 @@ export const ContentWrapper = styled.div`
   //height: 400px;
   //max-width: 100%;
 
-  //margin: 50px 0;
+  //margin: 20px 0;
   display: flex;
   flex-wrap: ${(props) => (props.direction ? "wrap-reverse" : "wrap")};
   justify-content: center;
@@ -24,6 +24,7 @@ export const TextWrapper = styled.div`
   flex: 1;
   //margin: 30px 0;
   //padding: 20px 30px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   align-items: ${(props) =>
@@ -60,7 +61,7 @@ export const Img = styled.div`
   height: 350px;
   min-width: 400px;
   flex: 1;
-  //margin: 20px 30px;
+  margin: 20px 30px;
   //padding: 0 10px;
 
   //height: 50%;
@@ -79,7 +80,7 @@ export const DetailsBtn = styled.button`
   color: #fff;
   background-color: forestgreen;
   padding: 8px 25px;
-  border-radius: 10px;
+  border-radius: 4px;
   border: 2px solid forestgreen;
   margin-top: 30px;
   cursor: pointer;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Category = styled.div`
   color: #04a23c;
   //margin: 0 20px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@ export const Category = styled.div`
   //display: flex;
   //align-items: center;
   //justify-content: center;
-  width: 150px;
+  width: 140px;
   height: 35px;
   //width: 35px;
   border: 2px solid #04a23c;

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import SectionVideo from "./SectionVideo/SectionVideo";
 import AboutUsSection from "./AboutUsSection/AboutUsSection";
 import SectionOurSolutions from "./SectionOurSolutions/SectionOurSolutions";
 import SectionOurTeam from "../SectionOurTeam/SectionOurTeam";
@@ -11,35 +10,87 @@ import PictureWithText from "../PictureWithText/PictureWithText";
 
 const Home = () => {
   return (
-    <>
-      <SectionVideo />
-      <Wrapper>
-        <AboutUsSection />
-        <SectionOurSolutions />
-        {/*<SectionOurTeam />*/}
-        {/*<SectionSustainabilityPolicy />*/}
-        <PictureWithText
-          direction="imgRight"
-          src={startup}
-          mainHeader="Zbudujmy razem mosty!"
-          button="Nasz zespół"
-        >
-          PHU SADDAR jest wyłącznym producentem i dystrybutorem EKOKOTEW
-          SADDAR®. Oferujemy idealne ekologiczne produkty przyczyniając się do
-          poszanowania środowiska naturalnego. EKOKOTWY SADDAR® są produktami o
-          oryginalnych chronionych prawem rozwiązaniach technicznych, posiadają
-          ochronę prawa autorskiego.
-        </PictureWithText>
-      </Wrapper>
-    </>
+    <Wrapper>
+      <AboutUsSection />
+      <SectionOurSolutions />
+      {/*<SectionOurTeam />*/}
+      <PictureWithText
+        direction="imgRight"
+        src={startup}
+        mainHeader="Zbudujmy razem mosty!"
+        button="Dowiedz się więcej"
+      >
+        System kompozytowych Eko - Kotew został oparty na zastrzeżonej
+        konstrukcji i innowacyjnej idei wykorzystania do produkcji nowego
+        materiału: kompozytu PET zbrojonego włóknem szklanym. Opracowane
+        tworzywo - krystalizowany PET o podwyższonej udarności ma dużą sztywność
+        i wytrzymałość na zrywanie. Dzięki temu z powodzeniem konkurujemy
+        jakością i innowacyjnością naszych produktów z tradycyjnymi produktami
+        wykonanymi ze stali.
+      </PictureWithText>
+      {/*<SectionSustainabilityPolicy />*/}
+    </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1400px;
 `;
 
 export default Home;
+
+{
+  /*Nasza działalność wpisuje się założenia gospodarki obiegu zamkniętego, zwanej inaczej*/
+}
+{
+  /*gospodarką cyrkularną. To model gospodarczy przyszłości, w którym zasoby krążą w*/
+}
+{
+  /*zamkniętym obiegu. Wszystkie produkty wytwarzamy z surowca PET, który pochodzi z*/
+}
+{
+  /*recyklingu plastikowych butelek. Wytworzony w ten kompozyt znajduje zastosowanie w*/
+}
+{
+  /*producji eko kotew o szerokim zastosowaniu w budownictwie. Każdy nasz produkt można*/
+}
+{
+  /*ponownie odzyskać i przetworzyć na kompozyt i dać mu drugie, a nawet trzecie życie.*/
+}
+
+{
+  /*Podobnie w gospodarce cyrkularnej cykl życia produktów jest cyklem zamkniętym,*/
+}
+{
+  /*mogącym powtarzać się – przynajmniej w teorii – w nieskończoność.*/
+}
+{
+  /*Na naszej skończonej planecie surowce mają ograniczone zasoby, a przestrzeń na*/
+}
+{
+  /*wyrzucanie tak po prostu odpadów praktycznie już nie istnieje.*/
+}
+{
+  /*Dziś oprócz ograniczonych zasobów naturalnych, dodatkową granicą, której nie możemy*/
+}
+{
+  /*przekroczyć stały się zmiany klimatu. Gospodarka obiegu zamkniętego jest odpowiedzią*/
+}
+{
+  /*na te wyzwania. W obiegu zamkniętym koniec życia produktu jest zarazem początkiem*/
+}
+{
+  /*życia nowego produktu. Dla naszych eko kotew koniec życia butelki plastikowej jest*/
+}
+{
+  /*początkiem życia dla kompozytu, z którego wytwarzamy produkty o szerokim spektrum*/
+}
+{
+  /*zastosowania. Innymi słowy wszystkie odpady zostają spożytkowane, ich wartość dodana*/
+}
+{
+  /*jest zmaksymalizowana. Na każdą wyprodukowaną eko kotwę zużywamy 20 butelek PET.*/
+}

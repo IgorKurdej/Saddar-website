@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 100%;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,7 @@ export const Header = styled.div`
 
 export const ProductsList = styled.div`
   //width: 900px;
-  max-width: 1200px;
+
   margin: 80px 0;
   display: flex;
   align-items: center;

@@ -61,7 +61,7 @@ const TitleWithSlider = ({ title, icon }) => {
 const Wrapper = styled.div`
   width: 100%;
   //margin: ;
-  padding: 50px 0;
+  padding-bottom: 50px;
 `;
 
 export default TitleWithSlider;

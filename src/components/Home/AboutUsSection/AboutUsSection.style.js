@@ -1,32 +1,56 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 1200px;
+  //max-width: 100%;
   //height: 50vh;
-  display: flex;
-  align-items: center;
-  margin-bottom: 100px;
+  //display: flex;
+  //align-items: center;
+  margin-bottom: 80px;
   //align-items: center;
   justify-content: center;
-`;
+  display: flex;
+  flex-wrap: wrap;
 
-export const Header = styled.h1`
-  //margin: 0;
-  font-size: 40px;
+  @media (max-width: 770px) {
+    padding: 0 60px;
+    text-align: center;
+  }
+
+  //@media (max-width: 400px) {
+  //  padding: 20px 60px;
+  //  text-align: center;
+  //}
 `;
 
 export const LeftWrapper = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  //margin-bottom: 30px;
+  //min-width: 390px;
+  //justify-content: flex-end;
+  //padding: 0 20px;
+  //min-width: 500px;
+  min-width: 450px;
+  //margin: 0 20px;
+  @media (max-width: 1250px) {
+    //margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 770px) {
+    margin-bottom: 30px;
+    padding: 0 50px;
+  }
 `;
 
 export const TextWrapper = styled.div`
-  width: 100%;
+  //width: 100%;
+  //flex: 1;
+  //padding: 30px 50px;
 
-  h2 {
-    font-size: 30px;
+  h1 {
+    font-size: 34px;
     margin-bottom: 20px;
   }
 
@@ -34,33 +58,54 @@ export const TextWrapper = styled.div`
     font-size: 20px;
     margin-bottom: 5px;
   }
-
-  button {
-    font-size: 18px;
-    padding: 8px 28px;
-    margin-top: 20px;
-    border-radius: 5px;
-    border: 2px solid #048c44;
-    cursor: pointer;
-    background-color: #048c44;
-    color: #fff;
-  }
 `;
 
-export const SliderWrapper = styled.div`
-  //margin-left: 100px;
-  max-width: 800px;
-  max-height: 800px;
+export const Button = styled.button`
+  font-size: 18px;
+  padding: 8px 28px;
+  margin: 20px 0;
+  //margin-top: 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #048c44;
+  color: #fff;
+  text-decoration: none;
+`;
+
+export const RightWrapper = styled.div`
   flex: 1;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //padding: 0 20px;
 `;
 
-export const SliderContent = styled.div`
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
+export const ImageWrapper = styled.div`
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //background-color: #282c34;
 `;
+
+export const Image = styled.img`
+  width: 400px;
+`;
+
+// export const SliderWrapper = styled.div`
+//   //margin-left: 100px;
+//   max-width: 800px;
+//   max-height: 800px;
+//   flex: 1;
+//   position: relative;
+// `;
+//
+// export const SliderContent = styled.div`
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+// `;
 
 export const Stripe = styled.div`
   width: 100%;

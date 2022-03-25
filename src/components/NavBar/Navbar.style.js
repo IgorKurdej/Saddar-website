@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.nav`
   width: 100%;
+  margin-bottom: 40px;
   min-height: 60px;
   background-color: ${(props) =>
     props.isHomePage
