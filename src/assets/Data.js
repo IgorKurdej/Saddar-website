@@ -59,3 +59,30 @@ export const historyData = [
     text: "Rok 2022 zaczął się bardzo intensywnie, powiększamy nasz zespół, zwiększamy sprzedaż i zdobywamy nowe rynki. Eko kotwy SADDAR trafiają do francuskich sklepów Brico Marche, a w Barcelonie powstaje przedstawicielstwo SADDAR na rynek Hiszpanii i Portugalii.",
   },
 ];
+
+// import img1 from './articles/image1.jpg';
+
+
+export const news = [
+  {
+    id: 0,
+    date: '6 października 2020',
+    title: 'Ekologiczne rozwiązania budowlane z Polski podbijają USA.',
+    mainText: 'Firma SADDAR specjalizująca się w produkcji ekologicznych elementów budowlanych podpisała, przy wsparciu Polskiej Agencji Inwestycji i Handlu (PAIH), kontrakt z amerykańską siecią 350-ciu hipermarketów budowlanych. Pierwsze zamówienie otwiera przed firmą szansę na szybkie rozszerzenie oferowanego w USA asortymentu o kolejne produkty i klientów. Wprowadzenie wyrobów SADDAR do sieci amerykańskich hipermarketów budowlanych to pierwszy krok we wsparciu, jakie udzieliło biuro handlowe PAIH w Waszyngtonie. Następny krok to zbudowanie wiedzy na rynku USA o zaletach polskiego produktu dla środowiska naturalnego.',
+    contentText: 'Pionierskie rozwiązanie produkcji ze specjalnie opracowanego przez SADDAR kompozytu na bazie surowca pochodzącego z recyklingu butelek PET jest dla Amerykanów bardzo atrakcyjne. Według danych McKinsey & Company tylko 28 proc. plastiku z opakowań i butelek jest w USA ponownie przetwarzane. Model gospodarki o obiegu zamkniętym, w który idealnie wpisuje się nasz rodzimy producent przyciąga coraz większą uwagę w Stanach Zjednoczonych. Sama Kalifornia, która przoduje w ekologicznych rozwiązaniach to piąta gospodarka światowa i tam właśnie będziemy starać się o nowe kontrakty dla polskiego producenta - powiedział Bartosz Szajda, kierownik biura ZBH PAIH w Waszyngtonie.\n' +
+        '\n' +
+        'Kompozytowa ekokotwa to produkt oparty na zastrzeżonej konstrukcji i innowacyjnym w skali światowej pomyśle wykorzystania do jego produkcji butelek PET. Dotychczasowa hegemonia producentów i dostawców kotw stalowych została przełamana autorskim rozwiązaniem polskiej firmy SADDAR z sukcesem podbijającej już Europę Zachodnią.\n' +
+        '\n' +
+        '- Rozwiązania instalacyjne oferowane przez SADDAR mają bardzo szerokie zastosowanie, w tym jako elementy montażu ogrodzeń, drewnianej architektury ogrodowej czy w sektorze budowlanym. Są to kotwy wbijane, wkręcane i przykręcane w niemal każdy rodzaj gruntu czy powierzchni. Na szeroką skalę używane są przy m.in. instalacji ogromnych farm fotowoltaicznych w USA. Montaż jest szybki i przyjazny środowisku: bez użycia cementu oraz potrzeby dostosowania gruntu z użyciem ciężkiego sprzętu. W razie potrzeby, instalacje można po prostu przenieść w inne miejsce bez uszczerbku dla środowiska - dodaje Bartosz Szajda.\n' +
+        '\n' +
+        'Naszym celem jest zapewnienie idealnego ekologicznego produktu, który istotnie przyczynia się do poszanowania środowiska naturalnego. Oprócz rozpoczętej właśnie ekspansji w USA w ciągu najbliższych 3 lat planujemy również umocnić się w Europie, zdobywając 25 proc. rynku. Przy poziomie produkcji 1.5 mln sztuk rocznie i zużyciu 20 butelek na jedną ekokotwę recyklingowi będziemy poddawać aż 30 mln butelek plastikowych. Dumnie możemy zatem mówić o naszych "zielonych zasługach" - powiedział Dariusz Sadowiński, założyciel firmy SADDAR.\n' +
+        '\n' +
+        'Bazowy surowiec PET pochodzi z recyklingu głównie plastikowych butelek po wodzie mineralnej czy napojach gazowanych i stanowi istotny czynnik ochrony środowiska i przekształcenia plastikowych odpadów poużytkowych czy poprodukcyjnych w pełnowartościowy nowy wyrób, który zastępuje droższy wykonany z blachy stalowej i którego wytworzenie wymaga zużycia dużej ilości energii i kopalin nieodnawialnych, będąc jednocześnie szkodliwym obciążeniem dla środowiska a zwłaszcza atmosfery. Jednocześnie ekokotwa SADDAR wbita w ziemię nigdy nie będzie korodować i nie ulegnie działaniom czynników atmosferycznych, na które jest narażona i jak ma to miejsce w przypadku konkurencyjnych wyrobów ze stali lakierowanej lub pokrytej galwanicznie mikronową powłoką. Oferowane przez SADDAR ekokotwy można użyć ponownie co więcej można je zmielić i ponownie przetworzyć na inne produkty. Wpisują się zatem w wymagania stawiane produktom w zakresie gospodarki w obiegu zamkniętym (circular economy).\n' +
+        '\n' +
+        '\n' +
+        'W latach 2018-2020 firma SADDAR zainwestowała w badania i rozwój blisko 2.0 mln USD na poprawę wydajność produkcji do 2,5 - 3 mln ekokotw rocznie oraz na unowocześnienie i opracowanie nowych innowacyjnych modeli produktów.\n' +
+        '\n' +
+        'Źródło: Informacja Prasowa Polskiej Agencji Inwestycji i Handlu (PAIH)\n' +
+        'https://www.paih.gov.pl/20201006/ekologiczne_rozwiazania_budowlane_z_polski_w_usa\n',
+  }
+]

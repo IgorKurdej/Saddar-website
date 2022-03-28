@@ -20,10 +20,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  //width: 50%;
   flex: 1;
-  //margin: 30px 0;
-  //padding: 20px 30px;
   padding: 20px 30px;
   display: flex;
   flex-direction: column;

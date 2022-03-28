@@ -12,11 +12,11 @@ const AboutUs = () => {
       <TitleWithIcon title="O nas" icon={AccessibilityNewIcon} />
       <PictureWithText
         direction="imgLeft"
-        header="Eco policy"
-        mainHeader="Kto zna działanie przyrody, ten żyje z nią w zgodzie."
+        header="O nas"
+        mainHeader="Tworzenie firmy to nie sprint. To maraton."
         src={img1}
       >
-        Dowiedz się o naszej eko polityce.
+        Dowiedz się o nas.
       </PictureWithText>
       <S.TextContent>
         PHU SADDAR to rodzinna firma działająca z sukcesem od ponad 30 lat na
@@ -54,14 +54,29 @@ const AboutUs = () => {
         zużyciu 20 butelek na jedną eko kotwę możemy poddawać recyklingowi aż 30
         mln plastikowych butelek.
       </S.TextContent>
+        <PictureWithText
+            direction="imgRight"
+            header="Eco policy"
+            mainHeader="Kto zna działanie przyrody, ten żyje z nią w zgodzie."
+            src={img1}
+        >Dowiedz się o naszej eko polityce</PictureWithText>
+        <S.TextContent>
+            Nasza działalność wpisuje się założenia gospodarki obiegu zamkniętego, zwanej inaczej gospodarką cyrkularną. To model gospodarczy przyszłości, w którym zasoby krążą w zamkniętym obiegu. Wszystkie produkty wytwarzamy z surowca PET, który pochodzi z recyklingu plastikowych butelek. Wytworzony w ten kompozyt znajduje zastosowanie w producji eko kotew o szerokim zastosowaniu w budownictwie. Każdy nasz produkt można ponownie odzyskać i przetworzyć na kompozyt i dać mu drugie, a nawet trzecie życie. <br/><br/>
+            Podobnie w gospodarce cyrkularnej cykl życia produktów jest cyklem zamkniętym, mogącym powtarzać się – przynajmniej w teorii – w nieskończoność.
+        </S.TextContent>
+        <S.TextContent>
+            Na naszej skończonej planecie surowce mają ograniczone zasoby, a przestrzeń na wyrzucanie tak po prostu odpadów praktycznie już nie istnieje.
+            Dziś oprócz ograniczonych zasobów naturalnych, dodatkową granicą, której nie możemy przekroczyć stały się zmiany klimatu. Gospodarka obiegu zamkniętego jest odpowiedzią na te wyzwania. W obiegu zamkniętym koniec życia produktu jest zarazem początkiem życia nowego produktu. Dla naszych eko kotew koniec życia butelki plastikowej jest początkiem życia dla kompozytu, z którego wytwarzamy produkty o szerokim spektrum zastosowania. Innymi słowy wszystkie odpady zostają spożytkowane, ich wartość dodana jest zmaksymalizowana. Na każdą wyprodukowaną eko kotwę zużywamy 20 butelek PET. (Tu ładna grafika, która to ilustruje).
+        </S.TextContent>
       <PictureWithText
-        direction="imgRight"
+        direction="imgLeft"
         header="Nasza historia"
         mainHeader="Przemiana pomysłu w wynalazek"
         src={img1}
       >
         Nie ciekawi Cię jak się tu znaleźliśmy?
       </PictureWithText>
+
       <HistoryBar />
     </S.Wrapper>
   );

@@ -7,17 +7,21 @@ import SectionSustainabilityPolicy from "../SectionSustainabilityPolicy/SectionS
 import Footer from "../Footer/Footer";
 import startup from "../../assets/img/startup-593341_1920.jpg";
 import PictureWithText from "../PictureWithText/PictureWithText";
+import TitleWithIcon from "../TitleWithIcon/TitleWithIcon";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+
 
 const Home = () => {
   return (
     <Wrapper>
       <AboutUsSection />
       <SectionOurSolutions />
+      {/*<TitleWithIcon title='Know-How' icon={BusinessCenterIcon} />*/}
       {/*<SectionOurTeam />*/}
       <PictureWithText
         direction="imgRight"
         src={startup}
-        mainHeader="Zbudujmy razem mosty!"
+        mainHeader="Nasze know-how"
         button="Dowiedz się więcej"
       >
         System kompozytowych Eko - Kotew został oparty na zastrzeżonej

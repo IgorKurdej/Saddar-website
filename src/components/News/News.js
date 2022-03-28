@@ -8,13 +8,22 @@ import NewspaperIcon from "@mui/icons-material/Newspaper";
 import MusicVideoIcon from "@mui/icons-material/MusicVideo";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 
+import {news} from '../../assets/Data';
+import img from '../../assets/articles/image1.jpg'
+
 const News = () => {
   return (
     <Wrapper>
       <TitleWithIcon title="Aktualności" icon={NewspaperIcon} />
       <ArticlesWrapper>
         <MainCol>
-          <ReadMoreCard article={true} mainArticle={true} />
+          <ReadMoreCard
+              article={true}
+              mainArticle={true}
+              img={img}
+              mainText={news[0].mainText}
+              title={news[0].title}
+          />
         </MainCol>
         <Hr />
         <SideCol>
@@ -59,6 +68,7 @@ const Wrapper = styled.div`
 const ArticlesWrapper = styled.div`
   display: flex;
   width: 100%;
+  margin-bottom: 120px;
 `;
 
 const MainCol = styled.div`

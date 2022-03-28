@@ -2,19 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const ReadMoreCard = ({ textVisibility, mainArticle, article }) => {
+import image from '../../assets/articles/image1.jpg';
+
+const ReadMoreCard = ({ textVisibility, mainArticle, article, title, mainText, img }) => {
   return (
     <Wrapper>
-      <Image mainArticle={mainArticle} />
-      <Title>przykładowy tekst</Title>
+      <Image mainArticle={mainArticle} src={img} image={image} />
+      <Title>{title}</Title>
       <Text textVisibility={textVisibility}>
-        Dotychczasowa hegemonia producentów i dostawców kotew stalowych została
-        przełamana autorskim rozwiązaniem polskiej firmy PHU SADDAR Dariusz
-        Sadowiński z sukcesem - podbijającej Europę Zachodnią oraz Stany
-        Zjednoczone... Dotychczasowa hegemonia producentów i dostawców kotew
-        stalowych została przełamana autorskim rozwiązaniem polskiej firmy PHU
-        SADDAR Dariusz Sadowiński z sukcesem - podbijającej Europę Zachodnią
-        oraz Stany Zjednoczone...
+          {mainText}
       </Text>
       <ReadMore as={Link} to={article && "/news/2"}>
         dowiedz się więcej
@@ -36,7 +32,12 @@ const Image = styled.div`
   width: 100%;
   //min-height: 300px;
   min-height: ${({ mainArticle }) => (mainArticle ? "340px" : "200px")};
-  background-color: #282c34;
+  //background-color: #282c34;
+  //background-image: ${(props) => `url(${props.image})`});
+  background-image: url(${image});
+  //background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 const Title = styled.p`

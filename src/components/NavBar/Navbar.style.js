@@ -13,7 +13,7 @@ export const Wrapper = styled.nav`
   //background-color: #282c34;
   position: ${(props) => props.isHomePage && "fixed"};
   top: 70px;
-  z-index: 4;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
