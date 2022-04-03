@@ -7,9 +7,7 @@ import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
 import MusicVideoIcon from "@mui/icons-material/MusicVideo";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
-
 import {news} from '../../assets/Data';
-import img from '../../assets/articles/image1.jpg'
 
 const News = () => {
   return (
@@ -20,15 +18,27 @@ const News = () => {
           <ReadMoreCard
               article={true}
               mainArticle={true}
-              img={img}
+              img={news[0].img}
               mainText={news[0].mainText}
               title={news[0].title}
           />
         </MainCol>
         <Hr />
         <SideCol>
-          <ReadMoreCard article={true} textVisibility={true} />
-          <ReadMoreCard article={true} textVisibility={true} />
+          <ReadMoreCard
+              article={true}
+              textVisibility={true}
+              img={news[1].img}
+              mainText={news[1].mainText}
+              title={news[1].title}
+          />
+          <ReadMoreCard
+              article={true}
+              textVisibility={true}
+              img={news[2].img}
+              mainText={news[2].mainText}
+              title={news[2].title}
+          />
         </SideCol>
       </ArticlesWrapper>
       <TitleWithSlider title="Nagrody i wyróżnienia" icon={EmojiEventsIcon} />

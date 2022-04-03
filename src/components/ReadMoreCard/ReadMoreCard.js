@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import image from '../../assets/articles/image1.jpg';
+import image from '../../assets/img/articles/image1.jpg';
 
 const ReadMoreCard = ({ textVisibility, mainArticle, article, title, mainText, img }) => {
   return (
@@ -32,12 +32,7 @@ const Image = styled.div`
   width: 100%;
   //min-height: 300px;
   min-height: ${({ mainArticle }) => (mainArticle ? "340px" : "200px")};
-  //background-color: #282c34;
-  //background-image: ${(props) => `url(${props.image})`});
-  background-image: url(${image});
-  //background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: ${props => `url(${props.src}) no-repeat top center`};
 `;
 
 const Title = styled.p`
@@ -60,6 +55,7 @@ const ReadMore = styled.p`
   font-size: 18px;
   //text-align: right;
   cursor: pointer;
+  color: gray;
 `;
 
 export default ReadMoreCard;

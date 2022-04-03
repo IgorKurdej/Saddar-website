@@ -86,7 +86,6 @@ const LeftSide = styled.div`
 
 const RightSide = styled.div`
   flex: 1;
-  border-left: 1px solid gray;
   padding: 35px 30px;
   position: relative;
 

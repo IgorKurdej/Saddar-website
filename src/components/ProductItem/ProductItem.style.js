@@ -53,7 +53,7 @@ export const Background = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 400px;
+  max-width: 300px;
   z-index: 3;
 `;
 
