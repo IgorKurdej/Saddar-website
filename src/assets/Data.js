@@ -7,7 +7,7 @@ import psoWsp from "./img/products/pso wsp 81.png";
 import fbSrc from "./img/products/fb_scr.png";
 
 //import articles images
-import img1 from "../assets/img/articles/image1.jpg";
+import img1 from "../assets/img/articles/usa-pl.jpeg";
 import img2 from "../assets/img/articles/image2.png";
 import img3 from "../assets/img/articles/image3.png";
 
