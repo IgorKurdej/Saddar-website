@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 20px 0 40px;
+  margin: 20px 0 80px;
 `;
 
 export const ContentWrapper = styled.div`
@@ -81,4 +81,5 @@ export const DetailsBtn = styled.button`
   border: 2px solid forestgreen;
   margin-top: 30px;
   cursor: pointer;
+  text-decoration: none;
 `;

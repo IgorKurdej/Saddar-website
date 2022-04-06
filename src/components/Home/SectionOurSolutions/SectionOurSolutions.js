@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import * as S from "./SectionOurSolutions.style";
 import img1 from "../../../assets/img/ourSolutions/pexels-emmanuel-ajayi-7260387.jpg";
-import img2 from "../../../assets/img/ourSolutions/pexels-andrea-davis-10593591.jpg";
+import img2 from "../../../assets/img/ourSolutions/pexels-rodolfo-quirós-1876045.jpg";
 import img3 from "../../../assets/img/ourSolutions/stephen-hansen-R8i1awntfII-unsplash.jpg";
 import TitleWithIcon from "../../TitleWithIcon/TitleWithIcon";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";

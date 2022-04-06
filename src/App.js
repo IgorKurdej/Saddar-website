@@ -11,6 +11,8 @@ import KnowHowView from "./views/KnowHowView";
 import NewsView from "./views/NewsView";
 import NewsItemDetails from "./components/News/NewsItemDetails/NewsItemDetails";
 import ServicesView from "./views/ServicesView";
+import PartnersView from "./views/PartnersView";
+import InstructionsView from "./views/InstructionsView";
 
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
           <Route path="/news" element={<NewsView />} />
           <Route path="/news/:id" element={<NewsItemDetails />} />
           <Route path="/services" element={<ServicesView />} />
+          <Route path="/partners" element={<PartnersView />} />
+          <Route path="/instructions" element={<InstructionsView />} />
         </Routes>
       </Router>
     </div>

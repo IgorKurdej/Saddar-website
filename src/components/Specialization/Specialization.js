@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TitleWithIcon from "../TitleWithIcon/TitleWithIcon";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import PictureWithText from "../PictureWithText/PictureWithText";
-import img5 from "../../assets/img/specialization/pexels-rachel-claire-4992384.jpg";
+import img5 from "../../assets/img/specialization/pexels-elle-hughes-4501786.jpg";
 import img4 from "../../assets/img/specialization/ghozy-samudra-5C4LRRlyLJc-unsplash.jpg";
 import img6 from "../../assets/img/specialization/omar-lopez-CR24X-w0GDA-unsplash.jpg";
 import styled from "styled-components";

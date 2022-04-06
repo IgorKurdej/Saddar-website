@@ -3,11 +3,7 @@ import * as S from "./ProductItem.style";
 import kotwa from "../../assets/img/products/psk wsp 4x4.png";
 import { Link } from "react-router-dom";
 
-const ProductItem = ({name, img}) => {
-  // const d = new Date("2022-02-01T09:00:00.000Z");
-  // console.log(d.getUTCHours()); // Hours
-  // console.log(d.getUTCMinutes());
-
+const ProductItem = ({ name, img }) => {
   return (
     <S.ProductWrapper as={Link} to="/products/2">
       <S.Wrapper>

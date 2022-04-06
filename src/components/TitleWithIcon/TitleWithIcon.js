@@ -15,6 +15,7 @@ const TitleWithIcon = ({ title, icon: Icon }) => {
 };
 
 const Wrapper = styled.div`
+  margin-top: 60px;
   width: 100%;
   //padding: 20px 0;
 

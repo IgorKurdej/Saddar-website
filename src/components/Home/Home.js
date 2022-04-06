@@ -10,7 +10,6 @@ import PictureWithText from "../PictureWithText/PictureWithText";
 import TitleWithIcon from "../TitleWithIcon/TitleWithIcon";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 
-
 const Home = () => {
   return (
     <Wrapper>
@@ -23,6 +22,7 @@ const Home = () => {
         src={startup}
         mainHeader="Nasze know-how"
         button="Dowiedz się więcej"
+        to="know-how"
       >
         System kompozytowych Eko - Kotew został oparty na zastrzeżonej
         konstrukcji i innowacyjnej idei wykorzystania do produkcji nowego

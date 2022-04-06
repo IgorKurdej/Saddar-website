@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "./PictureWithText.style";
 import img1 from "../../assets/img/AboutUs/pexels-nikolai-ulltang-323933.jpg";
+import { Link } from "react-router-dom";
 
 const PictureWithText = ({
   direction,
@@ -10,6 +11,7 @@ const PictureWithText = ({
   src,
   position,
   button,
+  to,
 }) => {
   return (
     <S.Wrapper>
@@ -20,7 +22,11 @@ const PictureWithText = ({
             <S.Header>{header}</S.Header>
             <S.MainHeader>{mainHeader}</S.MainHeader>
             <S.Text>{children}</S.Text>
-            {button && <S.DetailsBtn>{button}</S.DetailsBtn>}
+            {button && (
+              <S.DetailsBtn as={Link} to={to}>
+                Dowiedz się więcej
+              </S.DetailsBtn>
+            )}
           </S.TextWrapper>
           <S.Img src={src} />
         </S.ContentWrapper>
@@ -33,7 +39,11 @@ const PictureWithText = ({
             <S.Header>{header}</S.Header>
             <S.MainHeader direction="left">{mainHeader}</S.MainHeader>
             <S.Text alignRight>{children}</S.Text>
-            {button && <S.DetailsBtn>{button}</S.DetailsBtn>}
+            {button && (
+              <S.DetailsBtn as={Link} to={to}>
+                Dowiedz się więcej
+              </S.DetailsBtn>
+            )}
           </S.TextWrapper>
         </S.ContentWrapper>
       )}

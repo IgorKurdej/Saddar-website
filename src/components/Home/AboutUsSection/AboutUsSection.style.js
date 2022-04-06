@@ -20,6 +20,7 @@ export const Wrapper = styled.div`
   //  padding: 20px 60px;
   //  text-align: center;
   //}
+  //margin-bottom: 20px;
 `;
 
 export const LeftWrapper = styled.div`
@@ -56,20 +57,19 @@ export const TextWrapper = styled.div`
 
   p {
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
 `;
 
 export const Button = styled.button`
   font-size: 18px;
-  padding: 8px 28px;
-  margin: 20px 0;
-  //margin-top: 50px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #048c44;
   color: #fff;
+  background-color: forestgreen;
+  padding: 8px 25px;
+  border-radius: 4px;
+  border: 2px solid forestgreen;
+  margin-top: 60px;
+  cursor: pointer;
   text-decoration: none;
 `;
 
