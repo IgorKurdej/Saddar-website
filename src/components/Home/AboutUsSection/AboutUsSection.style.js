@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 
   @media (max-width: 770px) {
     padding: 0 60px;
-    text-align: center;
+    //text-align: center;
   }
 
   //@media (max-width: 400px) {
@@ -26,7 +26,8 @@ export const Wrapper = styled.div`
 export const LeftWrapper = styled.div`
   flex: 1;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   //margin-bottom: 30px;
   //min-width: 390px;
   //justify-content: flex-end;
@@ -39,9 +40,11 @@ export const LeftWrapper = styled.div`
     padding: 0 20px;
   }
 
-  @media (max-width: 770px) {
+  @media (max-width: 870px) {
     margin-bottom: 30px;
     padding: 0 50px;
+    align-items: center;
+    text-align: center;
   }
 `;
 
@@ -57,7 +60,7 @@ export const TextWrapper = styled.div`
 
   p {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -68,7 +71,7 @@ export const Button = styled.button`
   padding: 8px 25px;
   border-radius: 4px;
   border: 2px solid forestgreen;
-  margin-top: 60px;
+  margin: 20px 0;
   cursor: pointer;
   text-decoration: none;
 `;

@@ -33,10 +33,10 @@ const AboutUsSection = () => (
             Nasze produkty są w pełni ekologiczne i spełniają wymogi gospodarki
             obiegu zamkniętego.
           </p>
-          <S.Button as={Link} to="/about">
-            Dowiedz się więcej
-          </S.Button>
         </S.TextWrapper>
+        <S.Button as={Link} to="/about">
+          Dowiedz się więcej
+        </S.Button>
       </S.LeftWrapper>
       <S.RightWrapper>
         <Splide

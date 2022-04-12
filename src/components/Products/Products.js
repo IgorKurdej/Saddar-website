@@ -5,7 +5,7 @@ import ProductItem from "../../components/ProductItem/ProductItem";
 import CategoryItem from "./CategoryItem/CategoryItem";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
 import TitleWithIcon from "../TitleWithIcon/TitleWithIcon";
-import {products} from "../../assets/Data";
+import { products } from "../../assets/Data";
 
 const categories = [
   "Wbijane",
@@ -31,9 +31,9 @@ const Products = () => {
         }
       </S.Categories>
       <S.ProductsList>
-          {
-              products.map(item => <ProductItem key={item.id} name={item.name} img={item.img} />)
-          }
+        {products.map((item) => (
+          <ProductItem key={item.id} item={item} />
+        ))}
       </S.ProductsList>
     </S.Wrapper>
   );

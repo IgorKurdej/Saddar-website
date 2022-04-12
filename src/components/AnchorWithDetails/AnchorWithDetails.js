@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router";
 import styled from "styled-components";
 import LogoBar from "../LogoBar/LogoBar";
 import NavBar from "../NavBar/NavBar";
@@ -6,6 +7,11 @@ import ProductItem from "../ProductItem/ProductItem";
 import img from "../../assets/img/products/psk wsp 4x4.png";
 
 const AnchorWithDetails = () => {
+  const location = useLocation();
+  const productDetails = location.state.item;
+
+  const { img, name, size } = productDetails;
+
   const [toggleActiveButton, setToggleActiveButton] = useState(true);
 
   return (
@@ -18,8 +24,8 @@ const AnchorWithDetails = () => {
           <Image src={img} />
         </ImageWrapper>
         <DetailsContent>
-          <Header>PSK WST</Header>
-          <SizeDesc>51x51x550</SizeDesc>
+          <Header>{name}</Header>
+          <SizeDesc>{size}</SizeDesc>
           <ButtonsWrapper>
             <Button
               onClick={() => setToggleActiveButton(true)}
@@ -44,71 +50,69 @@ const AnchorWithDetails = () => {
                 rigidity & tensile strength.
               </Description>
               <Title>Zalety</Title>
-              <Description>
-                <Ul>
-                  <li>
-                    Specjalnie opracowane przez nas tworzywo wzmocnione włóknem
-                    szklanym
-                  </li>
-                  <li>
-                    Krystalizowany PET o dużej sztywność i wytrzymałość na
-                    zrywanie materiał polimerowy z odzysku (recyklat PET)
-                  </li>
-                  <li>
-                    Model zaprojektowany z myślą o ekstremalnej wytrzymałości i
-                    najwyższej jakości
-                  </li>
-                  <li>
-                    Model przeznaczony do wbijania w ziemię lub posadowienia w
-                    betonie bez konieczności kopania otworów
-                  </li>
-                  <li>
-                    Znakomicie sprawdza się jako podpory kwadratowych
-                    drewnianych słupów
-                  </li>
-                  <li>
-                    Utrzyma drewniane słupki nad ziemią lub betonem
-                    zabezpieczając słupek przed szkodnikami, grzybami, wodą,
-                    śniegiem i lodem
-                  </li>
-                </Ul>
-              </Description>
+              <Ul>
+                <li>
+                  Specjalnie opracowane przez nas tworzywo wzmocnione włóknem
+                  szklanym
+                </li>
+                <li>
+                  Krystalizowany PET o dużej sztywność i wytrzymałość na
+                  zrywanie materiał polimerowy z odzysku (recyklat PET)
+                </li>
+                <li>
+                  Model zaprojektowany z myślą o ekstremalnej wytrzymałości i
+                  najwyższej jakości
+                </li>
+                <li>
+                  Model przeznaczony do wbijania w ziemię lub posadowienia w
+                  betonie bez konieczności kopania otworów
+                </li>
+                <li>
+                  Znakomicie sprawdza się jako podpory kwadratowych drewnianych
+                  słupów
+                </li>
+                <li>
+                  Utrzyma drewniane słupki nad ziemią lub betonem zabezpieczając
+                  słupek przed szkodnikami, grzybami, wodą, śniegiem i lodem
+                </li>
+              </Ul>
             </>
           ) : (
             <>
               <Title>Rozmiary</Title>
               <Table>
-                <TableRow>
-                  <TableHeader>SYMBOL</TableHeader>
-                  <TableHeader>Dimensions [mm]</TableHeader>
-                </TableRow>
-                <TableRow>
-                  <TableHeader>PSK WEX 71x71x750G</TableHeader>
-                  <TableHeader>71x71x750</TableHeader>
-                </TableRow>
-                <TableRow>
-                  <TableHeader>PSK WEX 71x71x750G</TableHeader>
-                  <TableHeader>71x71x750</TableHeader>
-                </TableRow>
+                <thead>
+                  <TableRow>
+                    <TableHeader>SYMBOL</TableHeader>
+                    <TableHeader>Dimensions [mm]</TableHeader>
+                  </TableRow>
+                </thead>
+                <tbody>
+                  <TableRow>
+                    <TableHeader>PSK WEX 71x71x750G</TableHeader>
+                    <TableHeader>71x71x750</TableHeader>
+                  </TableRow>
+                  <TableRow>
+                    <TableHeader>PSK WEX 71x71x750G</TableHeader>
+                    <TableHeader>71x71x750</TableHeader>
+                  </TableRow>
+                </tbody>
               </Table>
               <Title>Zalety</Title>
-              <Description>
-                <Ul>
-                  <li>
-                    domy drewniane, domy modułowe, chaty ogrodowe, mola i
-                    pomosty
-                  </li>
-                  <li>
-                    mocowanie stalowych lub kompozytowych konstrukcji paneli
-                    fotowoltaicznych
-                  </li>
-                  <li>
-                    ogrodzenia z siatki drucianej, przemysłowe i drewniane
-                  </li>
-                  <li>tarasy, wiaty i drewniana architektura ogrodowa</li>
-                  <li>oznakowania uliczne, mocowanie ławek parkowych</li>
-                </Ul>
-              </Description>
+              {/*<Description>*/}
+              <Ul>
+                <li>
+                  domy drewniane, domy modułowe, chaty ogrodowe, mola i pomosty
+                </li>
+                <li>
+                  mocowanie stalowych lub kompozytowych konstrukcji paneli
+                  fotowoltaicznych
+                </li>
+                <li>ogrodzenia z siatki drucianej, przemysłowe i drewniane</li>
+                <li>tarasy, wiaty i drewniana architektura ogrodowa</li>
+                <li>oznakowania uliczne, mocowanie ławek parkowych</li>
+              </Ul>
+              {/*</Description>*/}
             </>
           )}
         </DetailsContent>
@@ -192,7 +196,7 @@ const DetailsWrapper = styled.div`
 
 const DetailsContent = styled.div`
   flex: 1;
-  min-width: 300px;
+  min-width: 400px;
   //padding: 20px 40px;
   padding: 0 40px;
   //margin: 0 20px;
@@ -230,6 +234,7 @@ const Button = styled.button`
 const Title = styled.p`
   color: #04a23c;
   font-size: 24px;
+  margin-bottom: 5px;
   //margin-top: 30px;
 `;
 
@@ -251,6 +256,11 @@ const TableHeader = styled.th`
 
 const Ul = styled.ul`
   padding: 0 20px;
+
+  li {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
 `;
 
 const Description = styled.p`

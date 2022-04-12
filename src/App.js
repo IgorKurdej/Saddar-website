@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/about" element={<AboutUsView />} />
           <Route path="/specialization" element={<SpecializationView />} />
           <Route path="/products" element={<ProductsView />} />
-          <Route path="/products/:id" element={<AnchorWithDetails />} />
+          <Route path="/product" element={<AnchorWithDetails />} />
           <Route path="/contact" element={<ContactView />} />
           <Route path="/know-how" element={<KnowHowView />} />
           <Route path="/news" element={<NewsView />} />
