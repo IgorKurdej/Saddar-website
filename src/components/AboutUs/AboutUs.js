@@ -17,9 +17,7 @@ const AboutUs = () => {
         header="O nas"
         mainHeader="Tworzenie firmy to nie sprint. To maraton."
         src={img1}
-      >
-        Dowiedz się o nas.
-      </PictureWithText>
+      />
       <S.TextContent>
         PHU SADDAR to rodzinna firma działająca z sukcesem od ponad 30 lat na
         rynku polskim oraz rynkach międzynarodowych. W 2004 roku założyciel
@@ -61,9 +59,7 @@ const AboutUs = () => {
         header="Eco policy"
         mainHeader="Kto zna działanie przyrody, ten żyje z nią w zgodzie."
         src={img2}
-      >
-        Dowiedz się o naszej eko polityce
-      </PictureWithText>
+      />
       <S.TextContent>
         Nasza działalność wpisuje się założenia gospodarki obiegu zamkniętego,
         zwanej inaczej gospodarką cyrkularną. To model gospodarczy przyszłości,
@@ -72,10 +68,8 @@ const AboutUs = () => {
         Wytworzony w ten kompozyt znajduje zastosowanie w producji eko kotew o
         szerokim zastosowaniu w budownictwie. Każdy nasz produkt można ponownie
         odzyskać i przetworzyć na kompozyt i dać mu drugie, a nawet trzecie
-        życie. <br />
-        <br />
-        Podobnie w gospodarce cyrkularnej cykl życia produktów jest cyklem
-        zamkniętym, mogącym powtarzać się – przynajmniej w teorii – w
+        życie. Podobnie w gospodarce cyrkularnej cykl życia produktów jest
+        cyklem zamkniętym, mogącym powtarzać się – przynajmniej w teorii – w
         nieskończoność.
       </S.TextContent>
       <S.TextContent>
@@ -89,18 +83,14 @@ const AboutUs = () => {
         początkiem życia dla kompozytu, z którego wytwarzamy produkty o szerokim
         spektrum zastosowania. Innymi słowy wszystkie odpady zostają
         spożytkowane, ich wartość dodana jest zmaksymalizowana. Na każdą
-        wyprodukowaną eko kotwę zużywamy 20 butelek PET. (Tu ładna grafika,
-        która to ilustruje).
+        wyprodukowaną eko kotwę zużywamy 20 butelek PET.
       </S.TextContent>
       <PictureWithText
         direction="imgLeft"
         header="Nasza historia"
         mainHeader="Przemiana pomysłu w wynalazek"
         src={img3}
-      >
-        Nie ciekawi Cię jak się tu znaleźliśmy?
-      </PictureWithText>
-
+      />
       <HistoryBar />
     </S.Wrapper>
   );
