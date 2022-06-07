@@ -3,14 +3,15 @@ import { useLocation } from "react-router";
 import styled from "styled-components";
 import LogoBar from "../LogoBar/LogoBar";
 import NavBar from "../NavBar/NavBar";
+import DownloadIcon from "@mui/icons-material/Download";
 import ProductItem from "../ProductItem/ProductItem";
-import img from "../../assets/img/products/psk wsp 4x4.png";
+import img from "../../assets/img/products/csk xxx-min.png";
 
 const AnchorWithDetails = () => {
   const location = useLocation();
   const productDetails = location.state.item;
 
-  const { img, name, size } = productDetails;
+  const { img, name, size, pdf } = productDetails;
 
   const [toggleActiveButton, setToggleActiveButton] = useState(true);
 
@@ -24,7 +25,12 @@ const AnchorWithDetails = () => {
           <Image src={img} />
         </ImageWrapper>
         <DetailsContent>
-          <Header>{name}</Header>
+          <HeaderWrapper>
+            <Name>{name}</Name>
+            <ShowCard href={pdf} target="_blank">
+              Wyświetl kartę
+            </ShowCard>
+          </HeaderWrapper>
           <SizeDesc>{size}</SizeDesc>
           <ButtonsWrapper>
             <Button
@@ -205,9 +211,22 @@ const DetailsContent = styled.div`
   //justify-content: center;
 `;
 
-const Header = styled.h1`
+const HeaderWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const Name = styled.h1`
   margin: 0;
   font-size: 40px;
+`;
+
+const ShowCard = styled.a`
+  font-size: 22px;
+  text-decoration: none;
+  color: #04a23c;
 `;
 
 const SizeDesc = styled.p`

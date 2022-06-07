@@ -1,10 +1,35 @@
 //import products images
-import cskXxx from "./img/products/csk_xxx.png";
-import pskBhq from "./img/products/psk bhq 4x4.png";
-import pskScr from "./img/products/psk_scr.png";
-import pskWst from "./img/products/psk wst 2x2.png";
-import psoWsp from "./img/products/pso wsp 81.png";
-import fbSrc from "./img/products/fb_scr.png";
+import cskXxx from "./img/products/csk xxx-min.png";
+import pskBhq from "./img/products/psk bhq 4x4-min.png";
+import pskScr from "./img/products/psk scr.png";
+import pskWst from "./img/products/psk wst 2x2-min.png";
+import psoWsp from "./img/products/pso wsp 101-min.png";
+import psoScr from "./img/products/pso scr.png";
+import rsxg from "./img/products/RSXG.png";
+import kran from "./img/products/kran231115_2.png";
+import pskPxx from "./img/products/psk-pxx.png";
+import pskPwx from "./img/products/psk pwx.png";
+import pskWex from "./img/products/PSK_WEX_91_91_750.png";
+import pskWqh from "./img/products/psk_wqh.png";
+import psoWsg from "./img/products/pso wsg.png";
+import rP from "./img/products/Rozbijak PET.png";
+import scxg from "./img/products/scxg.png";
+
+//import product's pdf
+import pdfCxxXxx from "../assets/pdf/kartyProduktow/cxx xxx.pdf";
+import pdfPskBhq from "../assets/pdf/kartyProduktow/psk bhq.pdf";
+import pdfPskPwx from "./pdf/kartyProduktow/psk pwx.pdf";
+import pdfPskPxx from "./pdf/kartyProduktow/psk pxx.pdf";
+import pdfPskScr from "./pdf/kartyProduktow/psk scr.pdf";
+import pdfPskWew from "./pdf/kartyProduktow/psk wew.pdf";
+import pdfPskWex from "./pdf/kartyProduktow/psk wex.pdf";
+import pdfPskWqh from "./pdf/kartyProduktow/psk wqh.pdf";
+import pdfPskWsp from "./pdf/kartyProduktow/psk wsp.pdf";
+import pdfPskWst from "./pdf/kartyProduktow/psk wst.pdf";
+import pdfPsoScr from "./pdf/kartyProduktow/pso scr.pdf";
+import pdfPsoWsg from "./pdf/kartyProduktow/pso wsg.pdf";
+import pdfPsoWsp from "./pdf/kartyProduktow/pso wsp.pdf";
+import pdfScxg from "./pdf/kartyProduktow/scxg.pdf";
 
 //import articles images
 import img1 from "../assets/img/articles/usa-pl.jpeg";
@@ -18,6 +43,7 @@ export const products = [
     category: "wkręcane",
     size: "4x4x24",
     img: pskScr,
+    pdf: pdfPskScr,
   },
   {
     id: 3,
@@ -25,6 +51,7 @@ export const products = [
     category: "wbijane",
     size: "2x2",
     img: pskWst,
+    pdf: pdfPskWst,
   },
   {
     id: 4,
@@ -32,13 +59,15 @@ export const products = [
     category: "wbijane",
     size: "81x610",
     img: psoWsp,
+    pdf: pdfPsoWsp,
   },
   {
     id: 5,
-    name: "FB SRC",
+    name: "PSO SRC",
     category: "wkręcane",
     size: "550",
-    img: fbSrc,
+    img: psoScr,
+    pdf: pdfPsoScr,
   },
   {
     id: 6,
@@ -46,6 +75,7 @@ export const products = [
     category: "daszki",
     size: "4x4",
     img: cskXxx,
+    pdf: pdfCxxXxx,
   },
   {
     id: 7,
@@ -53,6 +83,70 @@ export const products = [
     category: "do betonowania",
     size: "4x4",
     img: pskBhq,
+  },
+  {
+    id: 8,
+    name: "RSXQ",
+    category: "do betonowania",
+    size: "38x1500",
+    img: rsxg,
+    // pdf: pdfRsxg
+  },
+  {
+    id: 9,
+    name: "Kran",
+    category: "do betonowania",
+    size: "",
+    img: kran,
+  },
+  {
+    id: 10,
+    name: "PSK PXX",
+    category: "do betonowania",
+    size: "38x1500",
+    img: pskPxx,
+  },
+  {
+    id: 11,
+    name: "PSK PWX",
+    category: "do betonowania",
+    size: "",
+    img: pskPwx,
+  },
+  {
+    id: 12,
+    name: "PSK WEX",
+    category: "do betonowania",
+    size: "",
+    img: pskWex,
+  },
+  {
+    id: 13,
+    name: "PSK WQH",
+    category: "do betonowania",
+    size: "",
+    img: pskWqh,
+  },
+  {
+    id: 14,
+    name: "PSO WSG",
+    category: "do betonowania",
+    size: "",
+    img: psoWsg,
+  },
+  {
+    id: 15,
+    name: "Rozbijak PET",
+    category: "do betonowania",
+    size: "",
+    img: rP,
+  },
+  {
+    id: 16,
+    name: "SCXG",
+    category: "do betonowania",
+    size: "",
+    img: scxg,
   },
 ];
 

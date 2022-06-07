@@ -22,14 +22,14 @@ const Products = () => {
   return (
     <S.Wrapper>
       <TitleWithIcon title="Produkty" icon={ShoppingBasketOutlinedIcon} />
-      <S.Categories>
-        {
-          categories.map((category) => (
-            <CategoryItem key={category}>{category}</CategoryItem>
-          ))
-          // categories.map(category => console.log(category))
-        }
-      </S.Categories>
+      {/*<S.Categories>*/}
+      {/*  {*/}
+      {/*    categories.map((category) => (*/}
+      {/*      <CategoryItem key={category}>{category}</CategoryItem>*/}
+      {/*    ))*/}
+      {/*    // categories.map(category => console.log(category))*/}
+      {/*  }*/}
+      {/*</S.Categories>*/}
       <S.ProductsList>
         {products.map((item) => (
           <ProductItem key={item.id} item={item} />
