@@ -49,7 +49,6 @@ const Contact = () => {
           </Wrapper>
         </AddressWrapper>
       </InformationWrapper>
-      <Footer />
       {/*<Header>Skontaktuj się z nami</Header>*/}
       {/*<Wrapper>*/}
       {/*  {contacts.map((item) => (*/}

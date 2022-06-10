@@ -10,7 +10,6 @@ const SpecializationView = () => {
       <LogoBar />
       <NavBar />
       <Specialization />
-      <Footer />
     </>
   );
 };

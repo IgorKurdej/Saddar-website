@@ -13,6 +13,7 @@ import NewsItemDetails from "./components/News/NewsItemDetails/NewsItemDetails";
 import ServicesView from "./views/ServicesView";
 import PartnersView from "./views/PartnersView";
 import InstructionsView from "./views/InstructionsView";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -27,12 +28,13 @@ const App = () => {
           <Route path="/contact" element={<ContactView />} />
           <Route path="/know-how" element={<KnowHowView />} />
           <Route path="/news" element={<NewsView />} />
-          <Route path="/news/:id" element={<NewsItemDetails />} />
+          <Route path="/news/read-more" element={<NewsItemDetails />} />
           <Route path="/services" element={<ServicesView />} />
           <Route path="/partners" element={<PartnersView />} />
           <Route path="/instructions" element={<InstructionsView />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 };

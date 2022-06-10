@@ -44,7 +44,48 @@ export const products = [
     size: "4x4x24",
     img: pskScr,
     pdf: pdfPskScr,
-    // dimensions: [],
+    sizes: [
+      {
+        symbol: "PSK SCR 60x40x600G",
+        dimension: "60x40x600",
+      },
+      {
+        symbol: "PSK SCR 61x61x600G ",
+        dimension: "61x61x600",
+      },
+      {
+        symbol: "PSK SCR 71x71x600G",
+        dimension: "71x71x600",
+      },
+      {
+        symbol: "PSK SCR 71x71x720G",
+        dimension: "71x71x720",
+      },
+      {
+        symbol: "PSK SCR 76x76x600G",
+        dimension: "76x76x600",
+      },
+      {
+        symbol: "PSK SCR 76x76x720G",
+        dimension: "76x76x720",
+      },
+      {
+        symbol: "PSK SCR 91x91x600G",
+        dimension: "91x91x600",
+      },
+      {
+        symbol: "PSK SCR 91x91x720G",
+        dimension: "91x91x720",
+      },
+      {
+        symbol: "PSK SCR 98x98x720G",
+        dimension: "98x98x720",
+      },
+      {
+        symbol: "PSK SCR 101x101x720G",
+        dimension: "101x101x720",
+      },
+    ],
   },
   {
     id: 3,
@@ -53,6 +94,56 @@ export const products = [
     size: "2x2",
     img: pskWst,
     pdf: pdfPskWst,
+    sizes: [
+      {
+        symbol: "PSK WST 46x46x550G",
+        dimension: "46x46x550",
+      },
+      {
+        symbol: "PSK WST 46x46x600G",
+        dimension: "46x46x600",
+      },
+      {
+        symbol: "PSK WST 51x51x550G",
+        dimension: "51x51x550",
+      },
+      {
+        symbol: "PSK WST 51x51x600G",
+        dimension: "51x51x600",
+      },
+      {
+        symbol: "PSK WST 61x61x750G",
+        dimension: "61x61x750",
+      },
+      {
+        symbol: "PSK WST 71x71x750G",
+        dimension: "71x71x750",
+      },
+      {
+        symbol: "PSK WST 76x76x610G",
+        dimension: "76x76x610",
+      },
+      {
+        symbol: "PSK WST 76x76x750G",
+        dimension: "76x76x750",
+      },
+      {
+        symbol: "PSK WST 76x76x900G",
+        dimension: "76x76x900",
+      },
+      {
+        symbol: "PSK WST 71x71x900G",
+        dimension: "71x71x900",
+      },
+      {
+        symbol: "PSK WST 91x91x750G",
+        dimension: "91x91x750",
+      },
+      {
+        symbol: "PSK WST 91x91x900G",
+        dimension: "91x91x900",
+      },
+    ],
   },
   {
     id: 4,
@@ -61,6 +152,44 @@ export const products = [
     size: "81x610",
     img: psoWsp,
     pdf: pdfPsoWsp,
+    sizes: [
+      {
+        symbol: "PSO WSP 61x550G",
+        dimension: "61x550",
+      },
+      {
+        symbol: "PSO WSP 71x610G",
+        dimension: "71x610",
+      },
+      {
+        symbol: "PSO WSP 81x610G",
+        dimension: "81x610",
+      },
+      {
+        symbol: "PSO WSP 81x760G",
+        dimension: "81x760",
+      },
+      {
+        symbol: "PSO WSP 91x760G",
+        dimension: "91x760",
+      },
+      {
+        symbol: " PSO WSP 101x610G",
+        dimension: "101x610",
+      },
+      {
+        symbol: " PSO WSP 101x760G",
+        dimension: "101x760",
+      },
+      {
+        symbol: " PSO WSP 101x900G",
+        dimension: "101x900",
+      },
+      {
+        symbol: "PSO WSP 121x900G",
+        dimension: "121x900",
+      },
+    ],
   },
   {
     id: 5,
@@ -69,6 +198,16 @@ export const products = [
     size: "550",
     img: psoScr,
     pdf: pdfPsoScr,
+    sizes: [
+      {
+        symbol: "PSO SCR 61x565G",
+        dimension: "Ø 61x575",
+      },
+      {
+        symbol: "PSO SCR 61x675G",
+        dimension: "Ø 61x675",
+      },
+    ],
   },
   {
     id: 6,
@@ -77,14 +216,58 @@ export const products = [
     size: "4x4",
     img: cskXxx,
     pdf: pdfCxxXxx,
+    sizes: [
+      {
+        symbol: "CSK XXX 46x46Z",
+        dimension: "46x46",
+      },
+      {
+        symbol: "CSK XXX 51x51Z",
+        dimension: "51x51",
+      },
+      {
+        symbol: "CSK XXX 71x71G",
+        dimension: "71x71",
+      },
+      {
+        symbol: "CSK XXX 75x75G ",
+        dimension: "75x75",
+      },
+      {
+        symbol: "CSK XXX 91x91G",
+        dimension: "91x91",
+      },
+      {
+        symbol: "CSK XXX 101x101G",
+        dimension: "101x101",
+      },
+    ],
   },
   {
     id: 7,
-    name: "CSK BHQ",
+    name: "PSK BHQ",
     category: "do betonowania",
     size: "4x4",
     img: pskBhq,
     pdf: pdfPskBhq,
+    sizes: [
+      {
+        symbol: "PSK BHQ 71x71x330G",
+        dimension: "71x71x330",
+      },
+      {
+        symbol: "PSK BHQ 91x91x310G",
+        dimension: "91x91x310",
+      },
+      {
+        symbol: "PSK BHQ 101x101x310G",
+        dimension: "101x101x310",
+      },
+      {
+        symbol: "PSK BHQ 75x75x330G ",
+        dimension: "75x75x330",
+      },
+    ],
   },
   {
     id: 8,
@@ -92,6 +275,20 @@ export const products = [
     category: "do betonowania",
     size: "38x1500",
     img: rsxg,
+    sizes: [
+      {
+        symbol: "RSXG15",
+        dimension: "Ø 38x1500",
+      },
+      {
+        symbol: "RSXG17",
+        dimension: "Ø 38x1750",
+      },
+      {
+        symbol: "RSXG20",
+        dimension: "Ø 38x2000",
+      },
+    ],
   },
   {
     id: 9,
@@ -107,6 +304,40 @@ export const products = [
     size: "38x1500",
     img: pskPxx,
     pdf: pdfPskPxx,
+    sizes: [
+      {
+        symbol: "PSK PXX 71x71x175G",
+        dimension: "71x71x175",
+      },
+      {
+        symbol: "PSK PXX 91x91x175G",
+        dimension: "91x91x175",
+      },
+      {
+        symbol: "PSK PXX 76x76x175G",
+        dimension: "76x76x175",
+      },
+      {
+        symbol: "PSK PXX 98x98x175G ",
+        dimension: "98x98x175",
+      },
+      {
+        symbol: "  PSK PXX 101x101x175G",
+        dimension: "101x101x175",
+      },
+      {
+        symbol: "PSK PXX 140x140x175G",
+        dimension: "140x140x175",
+      },
+      {
+        symbol: "PSO PXX 81x175G",
+        dimension: "81x175, Ø 81",
+      },
+      {
+        symbol: "PSO PXX 101x175G",
+        dimension: "101x175, Ø 101",
+      },
+    ],
   },
   {
     id: 11,
@@ -115,6 +346,28 @@ export const products = [
     size: "",
     img: pskPwx,
     pdf: pdfPskPwx,
+    sizes: [
+      {
+        symbol: "PSK PWX 71x71x175G",
+        dimension: "71x71x175",
+      },
+      {
+        symbol: "PSK PWX 76x76x175G",
+        dimension: "76x76x175",
+      },
+      {
+        symbol: "PSK PWX 91x91x175G",
+        dimension: "91x91x175",
+      },
+      {
+        symbol: "PSK PWX 101x101x175G",
+        dimension: "101x101x175",
+      },
+      {
+        symbol: "PSK PWX 140x140x175G",
+        dimension: "140x140x175",
+      },
+    ],
   },
   {
     id: 12,
@@ -123,6 +376,48 @@ export const products = [
     size: "",
     img: pskWex,
     pdf: pdfPskWex,
+    sizes: [
+      {
+        symbol: "PSK WEX 71x71x750G",
+        dimension: " 71x71x750  ",
+      },
+      {
+        symbol: "PSK WEX 71x71x900G",
+        dimension: "71x71x900",
+      },
+      {
+        symbol: "PSK WEX 76x76x750G ",
+        dimension: "76x76x750",
+      },
+      {
+        symbol: "PSK WEX 76x76x900G ",
+        dimension: "76x76x900",
+      },
+      {
+        symbol: "PSK WEX 91x91x750G",
+        dimension: "91x91x750",
+      },
+      {
+        symbol: "PSK WEX 91x91x900G",
+        dimension: "91x91x900",
+      },
+      {
+        symbol: "PSK WEX 98x98x750G",
+        dimension: "98x98x750 ",
+      },
+      {
+        symbol: "PSKWEX 98x98x900G",
+        dimension: "98x98x900",
+      },
+      {
+        symbol: "PSK WEX 101x101x750G",
+        dimension: "101x101x750",
+      },
+      {
+        symbol: "PSK WEX 101x101x900G",
+        dimension: "101x101x900",
+      },
+    ],
   },
   {
     id: 13,
@@ -131,6 +426,56 @@ export const products = [
     size: "",
     img: pskWqh,
     pdf: pdfPskWqh,
+    sizes: [
+      {
+        symbol: "PSKWHQ",
+        dimension: "71x71x750",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "71x71x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "75x75x750",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "75x75x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "91x91x750",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "91x91x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "98x98x750 ",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "98x98x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "101x101x750",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "101x101x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "121x121x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "141x141x900",
+      },
+    ],
   },
   {
     id: 14,
@@ -139,6 +484,20 @@ export const products = [
     size: "",
     img: psoWsg,
     pdf: pdfPsoWsg,
+    sizes: [
+      {
+        symbol: "PSO WSG 101x900G ",
+        dimension: "101x900",
+      },
+      {
+        symbol: "PSO WSG 121x900G",
+        dimension: "121x900",
+      },
+      {
+        symbol: "PSO WSG 141x900G",
+        dimension: "141x900",
+      },
+    ],
   },
   {
     id: 15,
@@ -154,6 +513,76 @@ export const products = [
     size: "",
     img: scxg,
     pdf: pdfScxg,
+    sizes: [
+      {
+        symbol: "SCXG6x12",
+        dimension: "60x40x120",
+      },
+      {
+        symbol: "SCXG6x15",
+        dimension: "60x40x150",
+      },
+      {
+        symbol: "SCXG6x18",
+        dimension: "60x40x180",
+      },
+      {
+        symbol: "SCXGB6x12",
+        dimension: "60x60x120",
+      },
+      {
+        symbol: "SCXGB6x15",
+        dimension: "60x60x150",
+      },
+      {
+        symbol: "SCXGB6x18",
+        dimension: "60x60x180",
+      },
+      {
+        symbol: "SCXG7x12",
+        dimension: "70x70x120",
+      },
+      {
+        symbol: "SCXG7x15",
+        dimension: "70x70x150",
+      },
+      {
+        symbol: "SCXG7x18",
+        dimension: "70x70x180",
+      },
+      {
+        symbol: "SCXG75x12",
+        dimension: "75x75x120",
+      },
+      {
+        symbol: "SCXG7512",
+        dimension: "75x75x150",
+      },
+      {
+        symbol: "SCXG75x18",
+        dimension: "75x75x180",
+      },
+      {
+        symbol: "SCG90x12",
+        dimension: "90x90x120",
+      },
+      {
+        symbol: "SCG90x15",
+        dimension: "90x90x150",
+      },
+      {
+        symbol: "SCG90x180",
+        dimension: "90x90x180",
+      },
+      {
+        symbol: "SCG100x180",
+        dimension: "100x100x180",
+      },
+      {
+        symbol: "SCG120x200",
+        dimension: "120x120x200",
+      },
+    ],
   },
 ];
 

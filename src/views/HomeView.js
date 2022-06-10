@@ -31,7 +31,6 @@ const HomeView = () => {
       <NavBar isHomePage={true} isScrollMove={isScrollMove} />
       <SectionVideo />
       <Home />
-      <Footer />
     </>
   );
 };

@@ -4,20 +4,28 @@ import { Link } from "react-router-dom";
 
 import image from "../../assets/img/articles/image1.jpg";
 
-const ReadMoreCard = ({
-  textVisibility,
-  mainArticle,
-  article,
-  title,
-  mainText,
-  img,
-}) => {
+// {
+//     textVisibility,
+//         mainArticle,
+//         article,
+//         title,
+//         mainText,
+//         img,
+// }
+
+const ReadMoreCard = (props) => {
+  console.log(props.contentText);
+
   return (
     <Wrapper>
-      <Image mainArticle={mainArticle} src={img} image={image} />
-      <Title>{title}</Title>
-      <Text textVisibility={textVisibility}>{mainText}</Text>
-      <ReadMore as={Link} to={article && "/news/2"}>
+      <Image mainArticle={props.mainArticle} src={props.img} image={image} />
+      <Title>{props.title}</Title>
+      <Text textVisibility={props.textVisibility}>{props.mainText}</Text>
+      <ReadMore
+        as={Link}
+        to={props.article && "/news/read-more"}
+        state={{ article: props }}
+      >
         dowiedz się więcej
       </ReadMore>
     </Wrapper>

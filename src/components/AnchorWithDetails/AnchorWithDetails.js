@@ -11,7 +11,7 @@ const AnchorWithDetails = () => {
   const location = useLocation();
   const productDetails = location.state.item;
 
-  const { img, name, size, pdf } = productDetails;
+  const { img, name, size, pdf, sizes } = productDetails;
 
   const [toggleActiveButton, setToggleActiveButton] = useState(true);
 
@@ -96,17 +96,17 @@ const AnchorWithDetails = () => {
                   </TableRow>
                 </thead>
                 <tbody>
-                  <TableRow>
-                    <TableHeader>PSK WEX 71x71x750G</TableHeader>
-                    <TableHeader>71x71x750</TableHeader>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeader>PSK WEX 71x71x750G</TableHeader>
-                    <TableHeader>71x71x750</TableHeader>
-                  </TableRow>
+                  {sizes &&
+                    sizes.map(({ symbol, dimension }, idx) => (
+                      <TableRow key={idx}>
+                        <TableHeader>{symbol}</TableHeader>
+                        <TableHeader>{dimension}</TableHeader>
+                      </TableRow>
+                    ))}
                 </tbody>
               </Table>
               <Title>Zalety</Title>
+
               {/*<Description>*/}
               <Ul>
                 <li>
@@ -261,7 +261,7 @@ const Title = styled.p`
 
 const Table = styled.table`
   border-collapse: collapse;
-  max-width: 400px;
+  max-width: 450px;
   margin-bottom: 30px;
 `;
 

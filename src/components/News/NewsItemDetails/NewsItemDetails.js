@@ -2,80 +2,26 @@ import React from "react";
 import NavBar from "../../NavBar/NavBar";
 import LogoBar from "../../LogoBar/LogoBar";
 import styled from "styled-components";
+import { useLocation } from "react-router";
 
 const NewsItemDetails = () => {
+  const location = useLocation();
+  const article = location.state.article;
+  const { img, title, contentText } = article;
+
+  console.log(article);
+
   return (
     <>
       <LogoBar />
       <NavBar />
       <Wrapper>
-        <Image />
-        <Date>22.03.2021</Date>
-        <Title>
-          Polska ekologiczna technologia do budowy farm PV wchodzi na europejski
-          rynek.
-        </Title>
-        <Text>
-          Dotychczasowa hegemonia producentów i dostawców kotew stalowych
-          została przełamana autorskim rozwiązaniem polskiej firmy PHU SADDAR
-          Dariusz Sadowiński z sukcesem - podbijającej Europę Zachodnią oraz
-          Stany Zjednoczone... Dotychczasowa hegemonia producentów i dostawców
-          kotew stalowych została przełamana autorskim rozwiązaniem polskiej
-          firmy PHU SADDAR Dariusz Sadowiński z sukcesem - podbijającej Europę
-          Zachodnią oraz Stany Zjednoczone...Dotychczasowa hegemonia producentów
-          i dostawców kotew stalowych została przełamana autorskim rozwiązaniem
-          polskiej firmy PHU SADDAR Dariusz Sadowiński z sukcesem - podbijającej
-          Europę Zachodnią oraz Stany Zjednoczone... Dotychczasowa hegemonia
-          producentów i dostawców kotew stalowych została przełamana autorskim
-          rozwiązaniem polskiej firmy PHU SADDAR Dariusz Sadowiński z sukcesem -
-          podbijającej Europę Zachodnią oraz Stany Zjednoczone...Dotychczasowa
-          hegemonia producentów i dostawców kotew stalowych została przełamana
-          autorskim rozwiązaniem polskiej firmy PHU SADDAR Dariusz Sadowiński z
-          sukcesem - podbijającej Europę Zachodnią oraz Stany Zjednoczone...
-          Dotychczasowa hegemonia producentów i dostawców kotew stalowych
-          została przełamana autorskim rozwiązaniem polskiej firmy PHU SADDAR
-          Dariusz Sadowiński z sukcesemDotychczasowa hegemonia producentów i
-          dostawców kotew stalowych została przełamana autorskim rozwiązaniem
-          polskiej firmy PHU SADDAR Dariusz Sadowiński z sukcesem - podbijającej
-          Europę Zachodnią oraz Stany Zjednoczone... Dotychczasowa hegemonia
-          producentów i dostawców kotew stalowych została przełamana autorskim
-          rozwiązaniem polskiej firmy PHU SADDAR Dariusz Sadowiński z sukcesem -
-          podbijającej Europę Zachodnią oraz Stany Zjednoczone...Dotychczasowa
-          hegemonia producentów i dostawców kotew stalowych została przełamana
-          autorskim rozwiązaniem polskiej firmy PHU SADDAR Dariusz Sadowiński z
-          sukcesem - podbijającej Europę Zachodnią oraz Stany Zjednoczone...
-          Dotychczasowa hegemonia producentów i dostawców kotew stalowych
-          została przełamana autorskim rozwiązaniem polskiej firmy PHU SADDAR
-          Dariusz Sadowiński z sukcesDotychczasowa hegemonia producentów i
-          dostawców kotew stalowych została przełamana autorskim rozwiązaniem
-          polskiej firmy PHU SADDAR Dariusz Sadowiński z sukcesem - podbijającej
-          Europę Zachodnią oraz Stany Zjednoczone... Dotychczasowa hegemonia
-          producentów i dostawców kotew stalowych została przełamana autorskim
-          rozwiązaniem polskiej firmy PHU SADDAR Dariusz Sadowiński z sukcesem -
-          podbijającej Europę Zachodnią oraz Stany Zjednoczone...Dotychczasowa
-          hegemonia producentów i dostawców kotew stalowych została przełamana
-          autorskim rozwiązaniem polskiej firmy PHU SADDAR Dariusz Sadowiński z
-          sukcesem - podbijającej Europę Zachodnią oraz Stany Zjednoczone...
-          Dotychczasowa hegemonia producentów i dostawców kotew stalowych
-          została przełamana autorskim rozwiązaniem polskiej firmy PHU SADDAR
-          Dariusz Sadowiński z sukcesem - podbijającej Europę Zachodnią oraz
-          Stany Zjednoczone...Dotychczasowa hegemonia producentów i dostawców
-          kotew stalowych została przełamana autorskim rozwiązaniem polskiej
-          firmy PHU SADDAR Dariusz Sadowiński z sukcesem - podbijającej Europę
-          Zachodnią oraz Stany Zjednoczone... Dotychczasowa hegemonia
-          producentów i dostawców kotew stalowych została przełamana autorskim
-          rozwiązaniem polskiej firmy PHU SADDAR Dariusz Sadowiński z sukcesem -
-          podbijającej Europę Zachodnią oraz Stany Zjednoczone...Dotychczasowa
-          hegemonia producentów i dostawców kotew stalowych została przełamana
-          autorskim rozwiązaniem polskiej firmy PHU SADDAR Dariusz Sadowiński z
-          sukcesem - podbijającej Europę Zachodnią oraz Stany Zjednoczone...
-          Dotychczasowa hegemonia producentów i dostawców kotew stalowych
-          została przełamana autorskim rozwiązaniem polskiej firmy PHU SADDAR
-          Dariusz Sadowiński z sukcesem - podbijającej Europę Zachodnią oraz
-          Stany Zjednoczone...em - podbijającej Europę Zachodnią oraz Stany
-          Zjednoczone... - podbijającej Europę Zachodnią oraz Stany
-          Zjednoczone...
-        </Text>
+        <ImageWrapper>
+          <Image src={img} />
+        </ImageWrapper>
+        {/*<Date>22.03.2021</Date>*/}
+        <Title>{title}</Title>
+        <Text>{contentText}</Text>
       </Wrapper>
     </>
   );
@@ -86,9 +32,16 @@ const Wrapper = styled.div`
   margin-top: 30px;
 `;
 
-const Image = styled.div`
-  background-image: url("https://www.bundeskanzler.de/resource/image/1756332/16x9/1023/575/f2d91d626eb9ce3b95566704f333fe17/NB/2020-05-27-eu-fahne.jpg");
+const ImageWrapper = styled.div`
   width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+`;
+
+const Image = styled.img`
+  //background-image: url(${(props) => props.image});
+  max-width: 50%;
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

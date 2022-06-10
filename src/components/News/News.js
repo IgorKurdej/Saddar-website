@@ -30,6 +30,8 @@ const News = () => {
               img={news[0].img}
               mainText={news[0].mainText}
               title={news[0].title}
+              contentText={news[0].contentText}
+              date={news[0].date}
             />
           </MainCol>
           <Hr />
@@ -40,6 +42,8 @@ const News = () => {
               img={news[1].img}
               mainText={news[1].mainText}
               title={news[1].title}
+              contentText={news[1].contentText}
+              date={news[1].date}
             />
             <ReadMoreCard
               article={true}
@@ -47,6 +51,8 @@ const News = () => {
               img={news[2].img}
               mainText={news[2].mainText}
               title={news[2].title}
+              contentText={news[2].contentText}
+              date={news[2].date}
             />
           </SideCol>
         </ArticlesWrapper>
