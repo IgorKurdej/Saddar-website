@@ -44,6 +44,7 @@ export const products = [
     size: "4x4x24",
     img: pskScr,
     pdf: pdfPskScr,
+    // dimensions: [],
   },
   {
     id: 3,
@@ -63,7 +64,7 @@ export const products = [
   },
   {
     id: 5,
-    name: "PSO SRC",
+    name: "PSO SCR",
     category: "wkręcane",
     size: "550",
     img: psoScr,
@@ -83,6 +84,7 @@ export const products = [
     category: "do betonowania",
     size: "4x4",
     img: pskBhq,
+    pdf: pdfPskBhq,
   },
   {
     id: 8,
@@ -90,7 +92,6 @@ export const products = [
     category: "do betonowania",
     size: "38x1500",
     img: rsxg,
-    // pdf: pdfRsxg
   },
   {
     id: 9,
@@ -105,6 +106,7 @@ export const products = [
     category: "do betonowania",
     size: "38x1500",
     img: pskPxx,
+    pdf: pdfPskPxx,
   },
   {
     id: 11,
@@ -112,6 +114,7 @@ export const products = [
     category: "do betonowania",
     size: "",
     img: pskPwx,
+    pdf: pdfPskPwx,
   },
   {
     id: 12,
@@ -119,6 +122,7 @@ export const products = [
     category: "do betonowania",
     size: "",
     img: pskWex,
+    pdf: pdfPskWex,
   },
   {
     id: 13,
@@ -126,6 +130,7 @@ export const products = [
     category: "do betonowania",
     size: "",
     img: pskWqh,
+    pdf: pdfPskWqh,
   },
   {
     id: 14,
@@ -133,6 +138,7 @@ export const products = [
     category: "do betonowania",
     size: "",
     img: psoWsg,
+    pdf: pdfPsoWsg,
   },
   {
     id: 15,
@@ -147,6 +153,7 @@ export const products = [
     category: "do betonowania",
     size: "",
     img: scxg,
+    pdf: pdfScxg,
   },
 ];
 
@@ -312,5 +319,71 @@ export const news = [
       "zakresie gospodarki w obiegu zamkniętym.\n" +
       "Cały artykuł: https://swiatoze.pl/polska-ekologiczna-technologia-do-budowy-farm-pv-\n" +
       "wchodzi-na-europejski-rynek/",
+  },
+];
+
+export const contacts = [
+  {
+    id: 1,
+    position: "Właściciel, dział handlowy",
+    name: "Dariusz Sadowiński",
+    email: "dariusz.sadowinski@saddar.eu",
+    phone: "+48 698645855",
+  },
+  {
+    id: 2,
+    position: "Dyrektor ds. międzynarodowych rynków DIY",
+    name: "Karolina Berlińska",
+    email: "karolina.berlinska@saddar.eu",
+    phone: "+48 604177790",
+  },
+  {
+    id: 3,
+    position: "Handlowiec ds. międzynarodowych rynków DIY",
+    name: "Piotr Smolarek",
+    email: "piotr.smolarek@saddar.eu",
+    phone: "+48 690117382",
+  },
+  {
+    id: 4,
+    position: "Produkcja, jakość, logistyka",
+    name: "Waldemar Federczyk",
+    email: "waldemar.federczyk@saddar.eu",
+    phone: "+48 500633108",
+  },
+  {
+    id: 5,
+    position: "Dział badawczo-rozwojowy",
+    name: "Tomasz Waściszakowski",
+    email: "tomasz.wasciszakowski@saddar.eu",
+    phone: "+48 787404486",
+  },
+  {
+    id: 6,
+    position: "Administracja i programy unijne",
+    name: "Monika Walczak, Agnieszka Czerwiec",
+    email: "monika.walczak@saddar.eu, dofinansowania.eu@gmail.com",
+    phone: "+48 698656855, +48 793153453",
+  },
+  {
+    id: 7,
+    position: "Rynek Francuski",
+    name: "Renata Gruchal",
+    email: "r.gruchal@saddar.eu, export@saddar.eu",
+    phone: "+48 602727744",
+  },
+  {
+    id: 8,
+    position: "Rynek Angielski",
+    name: "Composite Eco Fencing UK Ltd.",
+    email: "ecocompositeuk@gmail.com",
+    phone: "+4407990451544",
+  },
+  {
+    id: 9,
+    position: "Rynek Hiszpański",
+    name: "Aleksandra Franczyk, Leszek Franczyk",
+    email: "aleksandra.franczyk@saddar.eu, leszek.franczyk@saddar.eu",
+    phone: "+34 697434011, +34 631181540",
   },
 ];

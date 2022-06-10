@@ -41,9 +41,11 @@ const Partners = () => {
         <Title>Tu nas znajdziesz</Title>
         <Map />
         <Title>Dystrybutorzy</Title>
-        {shops.map((shop, idx) => (
-          <p key={idx}>{shop}</p>
-        ))}
+        <ShopsWrapper>
+          {shops.map((shop, idx) => (
+            <Shop key={idx}>{shop}</Shop>
+          ))}
+        </ShopsWrapper>
       </Wrapper>
     </>
   );
@@ -83,6 +85,7 @@ const Title = styled.p`
   font-size: 42px;
   position: relative;
   margin-top: 80px;
+  margin-bottom: 20px;
 
   ::after {
     content: "";
@@ -93,6 +96,17 @@ const Title = styled.p`
     left: 0;
     position: absolute;
   }
+`;
+
+const ShopsWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+`;
+
+const Shop = styled.span`
+  font-size: 24px;
+  margin: 10px 20px 10px 0;
 `;
 
 export default Partners;

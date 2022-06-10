@@ -1,17 +1,34 @@
 import React from "react";
 import WorldMap from "react-svg-worldmap";
 
+// norwegia, szwecja, polska, holandia, finlandia, estonia, lotwa, litwa, dania, niemcy, belgia, czechy, slowacja, ukraina, ruminia, wegry, chrwacja
+// slowenia, austria, francja, hiszpania, anglia, irlandia, kanada,
 const data = [
-  { country: "pl", value: 3 }, // china
-  { country: "ca", value: 1311559204 }, // india
-  { country: "us", value: 331883986 }, // united states
-  { country: "id", value: 264935824 }, // indonesia
-  { country: "pk", value: 210797836 }, // pakistan
-  { country: "br", value: 210301591 }, // brazil
-  { country: "ng", value: 208679114 }, // nigeria
-  { country: "bd", value: 161062905 }, // bangladesh
-  { country: "ru", value: 141944641 }, // russia
-  { country: "mx", value: 127318112 }, // mexico
+  { country: "pl", value: " " },
+  { country: "no", value: " " },
+  { country: "se", value: " " },
+  { country: "nl", value: " " },
+  { country: "fi", value: " " },
+  { country: "ee", value: " " },
+  { country: "li", value: " " },
+  { country: "lv", value: " " },
+  { country: "de", value: " " },
+  { country: "dk", value: " " },
+  { country: "be", value: " " },
+  { country: "dk", value: " " },
+  { country: "ua", value: " " },
+  { country: "cz", value: " " },
+  { country: "sk", value: " " },
+  { country: "ro", value: " " },
+  { country: "hu", value: " " },
+  { country: "hr", value: " " },
+  { country: "fr", value: " " },
+  { country: "si", value: " " },
+  { country: "at", value: " " },
+  { country: "es", value: " " },
+  { country: "uk", value: " " },
+  { country: "ca", value: " " },
+  { country: "ie", value: " " },
 ];
 
 const Map = () => {

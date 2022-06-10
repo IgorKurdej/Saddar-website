@@ -8,44 +8,7 @@ import Footer from "../Footer/Footer";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import CallIcon from "@mui/icons-material/Call";
-
-const contacts = [
-  {
-    id: 1,
-    position: "Właściciel, dział handlowy",
-    name: "Dariusz Sadowiński",
-    email: "dariusz.sadowinski@saddar.eu",
-    phone: "+48 698645855",
-  },
-  {
-    id: 2,
-    position: "Dyrektor ds. międzynarodowych rynków DIY",
-    name: "Dariusz Sadowiński",
-    email: "dariusz.sadowinski@saddar.eu",
-    phone: "+48 698645855",
-  },
-  {
-    id: 3,
-    position: "Właściciel, dział handlowy",
-    name: "Dariusz Sadowiński",
-    email: "dariusz.sadowinski@saddar.eu",
-    phone: "+48 698645855",
-  },
-  {
-    id: 4,
-    position: "Dyrektor ds. międzynarodowych rynków DIY",
-    name: "Dariusz Sadowiński",
-    email: "dariusz.sadowinski@saddar.eu",
-    phone: "+48698645855",
-  },
-  {
-    id: 5,
-    position: "Właściciel, dział handlowy",
-    name: "Dariusz Sadowiński",
-    email: "dariusz.sadowinski@saddar.eu",
-    phone: "+48698645855",
-  },
-];
+import { contacts } from "../../assets/Data";
 
 const Contact = () => {
   return (
@@ -86,6 +49,7 @@ const Contact = () => {
           </Wrapper>
         </AddressWrapper>
       </InformationWrapper>
+      <Footer />
       {/*<Header>Skontaktuj się z nami</Header>*/}
       {/*<Wrapper>*/}
       {/*  {contacts.map((item) => (*/}

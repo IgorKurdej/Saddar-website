@@ -27,9 +27,11 @@ const AnchorWithDetails = () => {
         <DetailsContent>
           <HeaderWrapper>
             <Name>{name}</Name>
-            <ShowCard href={pdf} target="_blank">
-              Wyświetl kartę
-            </ShowCard>
+            {pdf && (
+              <ShowCard href={pdf} target="_blank">
+                Wyświetl kartę
+              </ShowCard>
+            )}
           </HeaderWrapper>
           <SizeDesc>{size}</SizeDesc>
           <ButtonsWrapper>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import ReadMoreCard from "../ReadMoreCard/ReadMoreCard";
 import TitleWithSlider from "../TitleWithSlider/TitleWithSlider";
@@ -7,71 +7,106 @@ import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
 import MusicVideoIcon from "@mui/icons-material/MusicVideo";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
-import {news} from '../../assets/Data';
+import { news } from "../../assets/Data";
 
 const News = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+    return () =>
+      window.removeEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
+
   return (
     <Wrapper>
       <TitleWithIcon title="Aktualności" icon={NewspaperIcon} />
-      <ArticlesWrapper>
-        <MainCol>
-          <ReadMoreCard
+      {width > 1200 ? (
+        <ArticlesWrapper>
+          <MainCol>
+            <ReadMoreCard
               article={true}
               mainArticle={true}
               img={news[0].img}
               mainText={news[0].mainText}
               title={news[0].title}
-          />
-        </MainCol>
-        <Hr />
-        <SideCol>
-          <ReadMoreCard
+            />
+          </MainCol>
+          <Hr />
+          <SideCol>
+            <ReadMoreCard
               article={true}
               textVisibility={true}
               img={news[1].img}
               mainText={news[1].mainText}
               title={news[1].title}
-          />
-          <ReadMoreCard
+            />
+            <ReadMoreCard
               article={true}
               textVisibility={true}
               img={news[2].img}
               mainText={news[2].mainText}
               title={news[2].title}
-          />
-        </SideCol>
-      </ArticlesWrapper>
-      <TitleWithSlider title="Nagrody i wyróżnienia" icon={EmojiEventsIcon} />
-      <TitleWithIcon title="Multimedia" icon={PhotoCameraIcon} />
-      <MultiList>
-        <MultiItem>
-          <MultiImgWrapper>
-            <MultiImg />
-          </MultiImgWrapper>
-          <MultiTextWrapper>
-            <MultiText title>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </MultiText>
-            <MultiText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry. Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry.
-            </MultiText>
-            <Date>22.03.2021</Date>
-          </MultiTextWrapper>
-        </MultiItem>
-      </MultiList>
+            />
+          </SideCol>
+        </ArticlesWrapper>
+      ) : (
+        <ArticlesWrapper>
+          <SideCol>
+            <ReadMoreCard
+              article={true}
+              img={news[0].img}
+              mainText={news[0].mainText}
+              title={news[0].title}
+            />
+            <ReadMoreCard
+              article={true}
+              // textVisibility={true}
+              img={news[1].img}
+              mainText={news[1].mainText}
+              title={news[1].title}
+            />
+            <ReadMoreCard
+              article={true}
+              // textVisibility={true}
+              img={news[2].img}
+              mainText={news[2].mainText}
+              title={news[2].title}
+            />
+          </SideCol>
+        </ArticlesWrapper>
+      )}
+      {/*<TitleWithSlider title="Nagrody i wyróżnienia" icon={EmojiEventsIcon} />*/}
+      {/*<TitleWithIcon title="Multimedia" icon={PhotoCameraIcon} />*/}
+      {/*<MultiList>*/}
+      {/*  <MultiItem>*/}
+      {/*    <MultiImgWrapper>*/}
+      {/*      <MultiImg />*/}
+      {/*    </MultiImgWrapper>*/}
+      {/*    <MultiTextWrapper>*/}
+      {/*      <MultiText title>*/}
+      {/*        Lorem Ipsum is simply dummy text of the printing and typesetting*/}
+      {/*        industry.*/}
+      {/*      </MultiText>*/}
+      {/*      <MultiText>*/}
+      {/*        Lorem Ipsum is simply dummy text of the printing and typesetting*/}
+      {/*        industry. Lorem Ipsum is simply dummy text of the printing and*/}
+      {/*        typesetting industry. Lorem Ipsum is simply dummy text of the*/}
+      {/*        printing and typesetting industry. Lorem Ipsum is simply dummy*/}
+      {/*        text of the printing and typesetting industry. Lorem Ipsum is*/}
+      {/*        simply dummy text of the printing and typesetting industry.*/}
+      {/*      </MultiText>*/}
+      {/*      <Date>22.03.2021</Date>*/}
+      {/*    </MultiTextWrapper>*/}
+      {/*  </MultiItem>*/}
+      {/*</MultiList>*/}
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
   //display: flex;
-  width: 1200px;
+  max-width: 1200px;
   //margin-top: 30px;
 `;
 
