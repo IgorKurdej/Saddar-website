@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import * as S from "./Navbar.style";
 import { Link } from "react-router-dom";
 
 const NavBar = ({ isHomePage, isScrollMove }) => {
+  const [windowDimension, setWindowDimension] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimension(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <S.Wrapper isHomePage={isHomePage} isScrollMove={isScrollMove}>
       <S.Ul>
         <S.Li as={Link} to="/about">
           O nas
         </S.Li>
-        {/*<S.Li>*/}
-        {/*</S.Li>*/}
         <S.Li as={Link} to="/specialization">
           Specjalizacje
         </S.Li>
@@ -36,6 +45,7 @@ const NavBar = ({ isHomePage, isScrollMove }) => {
           Kontakt
         </S.Li>
       </S.Ul>
+      {windowDimension}
     </S.Wrapper>
   );
 };

@@ -19,6 +19,10 @@ export const Wrapper = styled.nav`
 
   animation: ${(props) => props.isScrollMove && "appear .75s ease"};
 
+  //@media screen and (max-width: 768px) {
+  //  display: none;
+  //}
+
   @keyframes appear {
     from {
       opacity: 0;
