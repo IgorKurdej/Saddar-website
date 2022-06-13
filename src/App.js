@@ -14,25 +14,28 @@ import ServicesView from "./views/ServicesView";
 import PartnersView from "./views/PartnersView";
 import InstructionsView from "./views/InstructionsView";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 const App = () => {
   return (
     <div className="wrapper">
       <Router>
-        <Routes>
-          <Route path="/" element={<HomeView />} />
-          <Route path="/about" element={<AboutUsView />} />
-          <Route path="/specialization" element={<SpecializationView />} />
-          <Route path="/products" element={<ProductsView />} />
-          <Route path="/product" element={<AnchorWithDetails />} />
-          <Route path="/contact" element={<ContactView />} />
-          <Route path="/know-how" element={<KnowHowView />} />
-          <Route path="/news" element={<NewsView />} />
-          <Route path="/news/read-more" element={<NewsItemDetails />} />
-          <Route path="/services" element={<ServicesView />} />
-          <Route path="/partners" element={<PartnersView />} />
-          <Route path="/instructions" element={<InstructionsView />} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<HomeView />} />
+            <Route path="/about" element={<AboutUsView />} />
+            <Route path="/specialization" element={<SpecializationView />} />
+            <Route path="/products" element={<ProductsView />} />
+            <Route path="/product" element={<AnchorWithDetails />} />
+            <Route path="/contact" element={<ContactView />} />
+            <Route path="/know-how" element={<KnowHowView />} />
+            <Route path="/news" element={<NewsView />} />
+            <Route path="/news/read-more" element={<NewsItemDetails />} />
+            <Route path="/services" element={<ServicesView />} />
+            <Route path="/partners" element={<PartnersView />} />
+            <Route path="/instructions" element={<InstructionsView />} />
+          </Routes>
+        </ScrollToTop>
       </Router>
       <Footer />
     </div>
