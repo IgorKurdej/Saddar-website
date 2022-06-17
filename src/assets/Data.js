@@ -719,36 +719,36 @@ export const news = [
       "można po prostu przenieść w inne miejsce bez uszczerbku dla środowiska.\n" +
       "Bazowy surowiec PET pochodzi z recyklingu głównie plastikowych butelek po wodzie mineralnej czy napojach gazowanych i stanowi istotny czynnik ochrony środowiska i przekształcenia plastikowych odpadów poużytkowych czy poprodukcyjnych w pełnowartościowy nowy wyrób który zastępuje droższy wykonany z blachy stalowej i którego wytworzenie wymaga zużycia dużej ilości energii i kopalin nieodnawialnych, będąc jednocześnie szkodliwym obciążeniem dla środowiska a zwłaszcza atmosfery. Jednocześnie eko kotwa SADDAR wbita w ziemię nigdy nie będzie korodować i nie ulegnie działaniom czynników atmosferycznych, na które jest narażona i jak ma to miejsce w przypadku konkurencyjnych wyrobów ze stali lakierowanej lub pokrytej galwanicznie mikronową powłoką. Oferowane przez SADDAR eko kotwy można użyć ponownie co więcej można je zmielić i ponownie przetworzyć na inne produkty. Wpisują się zatem w wymagania stawiane przez Unie Europejską produktom w zakresie gospodarki w obiegu zamkniętym (circular economy). W latach 2018-2020 firma SADDAR zainwestowała w badania i rozwój blisko 2.0 mln USD na poprawę wydajność produkcji do 2,5 – 3 mln eko kotew rocznie oraz na unowocześnienie i opracowanie nowych innowacyjnych modeli produktów. Obecnie firma planuje kolejne inwestycje w zakresie przygotowania i wdrożenia do produkcji modeli dostosowanych do wymogów budownictwa modułowego.",
   },
-  {
-    id: 3,
-    date: "21 lutego 2022",
-    title:
-      "Polska ekologiczna technologia do budowy farm PV wchodzi na europejski rynek artykuł w www.swiatoze.pl",
-    mainText: "",
-    contentText:
-      "Polska ekologiczna technologia do budowy farm PV wchodzi na europejski rynek\n" +
-      "Flagowym produktem firmy są kotwy wbijane, wkręcane i przykręcane w niemal każdy\n" +
-      "rodzaj gruntu czy powierzchni. Na szeroką skalę używane są m.in . przy instalacji\n" +
-      "ogromnych farm fotowoltaicznych. Montaż jest szybki i przyjazny środowisku: bez użycia\n" +
-      "cementu oraz potrzeby dostosowania gruntu z użyciem ciężkiego sprzętu. W razie\n" +
-      "potrzeby, instalacje można po prostu przenieść w inne miejsce bez uszczerbku dla\n" +
-      "środowiska.\n" +
-      "Bazowy surowiec PET pochodzi z recyklingu głównie plastikowych butelek po wodzie\n" +
-      "mineralnej czy napojach gazowanych. Stanowi to istotny czynnik ochrony środowiska i\n" +
-      "przekształcenia plastikowych odpadów poużytkowych czy poprodukcyjnych w\n" +
-      "pełnowartościowy nowy wyrób.\n" +
-      "Taki produkt zastępuje droższy, wykonany z blachy stalowej, którego wytworzenie wymaga\n" +
-      "zużycia dużej ilości energii i kopalin nieodnawialnych.\n" +
-      "\n" +
-      "Dodatkowo eko kotwa SADDAR wbita w ziemię nigdy nie będzie korodować i nie ulegnie\n" +
-      "działaniom czynników atmosferycznych, czego nie można powiedzieć o wyrobach ze stali\n" +
-      "lakierowanej lub pokrytej galwanicznie mikronową powłoką.\n" +
-      "Co ważne, oferowane przez polską firmę eko kotwy można ponownie zmielić i\n" +
-      "przetworzyć. Produkt wpisuje się zatem w wymagania stawiane przez Unię Europejską w\n" +
-      "zakresie gospodarki w obiegu zamkniętym.\n" +
-      "Cały artykuł: https://swiatoze.pl/polska-ekologiczna-technologia-do-budowy-farm-pv-\n" +
-      "wchodzi-na-europejski-rynek/",
-  },
+  // {
+  //   id: 3,
+  //   date: "21 lutego 2022",
+  //   title:
+  //     "Polska ekologiczna technologia do budowy farm PV wchodzi na europejski rynek artykuł w www.swiatoze.pl",
+  //   mainText: "",
+  //   contentText:
+  //     "Polska ekologiczna technologia do budowy farm PV wchodzi na europejski rynek\n" +
+  //     "Flagowym produktem firmy są kotwy wbijane, wkręcane i przykręcane w niemal każdy\n" +
+  //     "rodzaj gruntu czy powierzchni. Na szeroką skalę używane są m.in . przy instalacji\n" +
+  //     "ogromnych farm fotowoltaicznych. Montaż jest szybki i przyjazny środowisku: bez użycia\n" +
+  //     "cementu oraz potrzeby dostosowania gruntu z użyciem ciężkiego sprzętu. W razie\n" +
+  //     "potrzeby, instalacje można po prostu przenieść w inne miejsce bez uszczerbku dla\n" +
+  //     "środowiska.\n" +
+  //     "Bazowy surowiec PET pochodzi z recyklingu głównie plastikowych butelek po wodzie\n" +
+  //     "mineralnej czy napojach gazowanych. Stanowi to istotny czynnik ochrony środowiska i\n" +
+  //     "przekształcenia plastikowych odpadów poużytkowych czy poprodukcyjnych w\n" +
+  //     "pełnowartościowy nowy wyrób.\n" +
+  //     "Taki produkt zastępuje droższy, wykonany z blachy stalowej, którego wytworzenie wymaga\n" +
+  //     "zużycia dużej ilości energii i kopalin nieodnawialnych.\n" +
+  //     "\n" +
+  //     "Dodatkowo eko kotwa SADDAR wbita w ziemię nigdy nie będzie korodować i nie ulegnie\n" +
+  //     "działaniom czynników atmosferycznych, czego nie można powiedzieć o wyrobach ze stali\n" +
+  //     "lakierowanej lub pokrytej galwanicznie mikronową powłoką.\n" +
+  //     "Co ważne, oferowane przez polską firmę eko kotwy można ponownie zmielić i\n" +
+  //     "przetworzyć. Produkt wpisuje się zatem w wymagania stawiane przez Unię Europejską w\n" +
+  //     "zakresie gospodarki w obiegu zamkniętym.\n" +
+  //     "Cały artykuł: https://swiatoze.pl/polska-ekologiczna-technologia-do-budowy-farm-pv-\n" +
+  //     "wchodzi-na-europejski-rynek/",
+  // },
 ];
 
 export const contacts = [

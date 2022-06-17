@@ -33,9 +33,8 @@ const ReadMoreCard = (props) => {
 };
 
 const Wrapper = styled.div`
-  //max-width: 300px;
+  // max-width: 300px;
   flex: 1;
-  //background-color: #61dafb;
   padding: 10px 0;
   //width: auto;
 `;

@@ -59,26 +59,16 @@ const News = () => {
       ) : (
         <ArticlesWrapper>
           <SideCol>
-            <ReadMoreCard
-              article={true}
-              img={news[0].img}
-              mainText={news[0].mainText}
-              title={news[0].title}
-            />
-            <ReadMoreCard
-              article={true}
-              // textVisibility={true}
-              img={news[1].img}
-              mainText={news[1].mainText}
-              title={news[1].title}
-            />
-            <ReadMoreCard
-              article={true}
-              // textVisibility={true}
-              img={news[2].img}
-              mainText={news[2].mainText}
-              title={news[2].title}
-            />
+            {
+              news.map((item, idx) => 
+                <ReadMoreCard
+                  article={true}
+                  img={news[idx].img}
+                  mainText={news[idx].mainText}
+                  title={news[idx].title}
+                  contentText={news[idx].contentText}
+                />)
+            }
           </SideCol>
         </ArticlesWrapper>
       )}

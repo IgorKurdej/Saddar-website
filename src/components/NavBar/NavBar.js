@@ -2,8 +2,48 @@ import React, { useState, useEffect } from "react";
 import * as S from "./Navbar.style";
 import { Link } from "react-router-dom";
 
+const navbarLinks = [
+  {
+    to: "/about",
+    name: "O nas",
+  },
+  {
+    to: "/specialization",
+    name: "Specjalizacje",
+  },
+  {
+    to: "/know-how",
+    name: "Know-how",
+  },
+  {
+    to: "/products",
+    name: "Produkty",
+  },
+  {
+    to: "/services",
+    name: "Usługi",
+  },
+  {
+    to: "/partners",
+    name: "Partnerzy",
+  },
+  {
+    to: "/news",
+    name: "News",
+  },
+  {
+    to: "/instructions",
+    name: "Instrukcje",
+  },
+  {
+    to: "/contact",
+    name: "Kontakt",
+  },
+]
+
 const NavBar = ({ isHomePage, isScrollMove }) => {
   const [windowDimension, setWindowDimension] = useState(window.innerWidth);
+  const [toggleMobileNavbar, setToggleMobileNavbar] = useState(false); 
 
   useEffect(() => {
     function handleResize() {
@@ -16,8 +56,27 @@ const NavBar = ({ isHomePage, isScrollMove }) => {
 
   return (
     <S.Wrapper isHomePage={isHomePage} isScrollMove={isScrollMove}>
-      <S.Ul>
-        <S.Li as={Link} to="/about">
+      {
+        windowDimension > 1024 ? (
+          <S.Ul>
+            {
+              navbarLinks.map(item => <S.Li key={item.name} as={Link} to={item.to}>{item.name}</S.Li>)
+            }
+          </S.Ul>
+        ) : (
+          <S.Ul>
+        
+          </S.Ul>
+        )
+      }
+      {windowDimension}
+    </S.Wrapper>
+  );
+};
+
+export default NavBar;
+
+{/* <S.Li as={Link} to="/about">
           O nas
         </S.Li>
         <S.Li as={Link} to="/specialization">
@@ -43,11 +102,4 @@ const NavBar = ({ isHomePage, isScrollMove }) => {
         </S.Li>
         <S.Li as={Link} to="/contact">
           Kontakt
-        </S.Li>
-      </S.Ul>
-      {windowDimension}
-    </S.Wrapper>
-  );
-};
-
-export default NavBar;
+        </S.Li> */}

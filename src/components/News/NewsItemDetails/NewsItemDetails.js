@@ -19,7 +19,7 @@ const NewsItemDetails = () => {
         <ImageWrapper>
           <Image src={img} />
         </ImageWrapper>
-        {/*<Date>22.03.2021</Date>*/}
+        {/* <Date>22.03.2021</Date> */}
         <Title>{title}</Title>
         <Text>{contentText}</Text>
       </Wrapper>
@@ -28,25 +28,28 @@ const NewsItemDetails = () => {
 };
 
 const Wrapper = styled.div`
-  width: 1200px;
-  margin-top: 30px;
+  max-width: 1200px;
+  margin-top: 20px;
+  // background-color: green;
+  margin: 0 30px;
+  padding: 20px;
 `;
 
 const ImageWrapper = styled.div`
-  width: 100%;
+  // width: 100%;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 `;
 
 const Image = styled.img`
   //background-image: url(${(props) => props.image});
-  max-width: 50%;
+  max-width: 100%;
 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   //max-height: 400px;
-  min-height: 300px;
+  // min-height: 300px;
   //background-color: #61dafb;
 `;
 
@@ -58,13 +61,20 @@ const Date = styled.p`
 `;
 
 const Title = styled.h1`
-  //margin: 20px 0;
-  font-size: 42px;
+  margin: 20px 0;
+  // font-size: 42px;
 `;
 
 const Text = styled.p`
-  margin: 20px 0 50px;
   font-size: 22px;
+
+  @media screen and (min-width: 1200px){
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 768px){
+    font-size: 20px;
+  }
 `;
 
 export default NewsItemDetails;
