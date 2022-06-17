@@ -84,8 +84,7 @@ const ImageBanner = styled.div`
 const Title = styled.p`
   font-size: 42px;
   position: relative;
-  margin-top: 80px;
-  margin-bottom: 20px;
+  margin: 80px 20px 20px;
 
   ::after {
     content: "";
@@ -101,7 +100,7 @@ const Title = styled.p`
 const ShopsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin: 0 20px 40px;
 `;
 
 const Shop = styled.span`

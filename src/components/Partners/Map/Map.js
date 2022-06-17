@@ -1,8 +1,7 @@
 import React from "react";
 import WorldMap from "react-svg-worldmap";
+import styled from "styled-components";
 
-// norwegia, szwecja, polska, holandia, finlandia, estonia, lotwa, litwa, dania, niemcy, belgia, czechy, slowacja, ukraina, ruminia, wegry, chrwacja
-// slowenia, austria, francja, hiszpania, anglia, irlandia, kanada,
 const data = [
   { country: "pl", value: " " },
   { country: "no", value: " " },
@@ -33,10 +32,14 @@ const data = [
 
 const Map = () => {
   return (
-    <>
+    <Wrapper>
       <WorldMap color="forestgreen" size="xxl" data={data} />
-    </>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  text-align: center;
+`;
 
 export default Map;

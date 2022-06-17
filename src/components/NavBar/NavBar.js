@@ -39,44 +39,74 @@ const navbarLinks = [
     to: "/contact",
     name: "Kontakt",
   },
-]
+];
 
-const NavBar = ({ isHomePage, isScrollMove }) => {
-  const [windowDimension, setWindowDimension] = useState(window.innerWidth);
-  const [toggleMobileNavbar, setToggleMobileNavbar] = useState(false); 
+// const NavBar = ({ isHomePage, isScrollMove }) => {
+//   const [windowDimension, setWindowDimension] = useState(window.innerWidth);
+//   const [toggleMobileNavbar, setToggleMobileNavbar] = useState(false);
+//
+//   useEffect(() => {
+//     function handleResize() {
+//       setWindowDimension(window.innerWidth);
+//     }
+//
+//     window.addEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
+//   }, []);
+//
+//   return (
+//     <S.Wrapper isHomePage={isHomePage} isScrollMove={isScrollMove}>
+//       {
+//         windowDimension > 1024 ? (
+//           <S.Ul>
+//             {
+//               navbarLinks.map(item => <S.Li key={item.name} as={Link} to={item.to}>{item.name}</S.Li>)
+//             }
+//           </S.Ul>
+//         ) : (
+//           <S.Ul>
+//
+//           </S.Ul>
+//         )
+//       }
+//       {windowDimension}
+//     </S.Wrapper>
+//   );
+// };
 
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimension(window.innerWidth);
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+const NavBar = () => {
+  const [extendNavbar, setExtendNavbar] = useState(false);
   return (
-    <S.Wrapper isHomePage={isHomePage} isScrollMove={isScrollMove}>
-      {
-        windowDimension > 1024 ? (
-          <S.Ul>
-            {
-              navbarLinks.map(item => <S.Li key={item.name} as={Link} to={item.to}>{item.name}</S.Li>)
-            }
-          </S.Ul>
-        ) : (
-          <S.Ul>
-        
-          </S.Ul>
-        )
-      }
-      {windowDimension}
-    </S.Wrapper>
+    <S.NavbarContainer extendNavbar={extendNavbar}>
+      <S.NavbarInnerContainer>
+        <S.LeftContainer>
+          <S.NavbarLinkContainer>
+            <S.NavbarLink to="/">Home</S.NavbarLink>
+            <S.NavbarLink to="/products">Products</S.NavbarLink>
+            <S.NavbarLink to="/contact">Contact us</S.NavbarLink>
+            <S.NavbarLink to="/about">About</S.NavbarLink>
+            <S.OpenLinksButton onClick={() => setExtendNavbar((curr) => !curr)}>
+              {extendNavbar ? <>&#10005;</> : <>&#8801;</>}
+            </S.OpenLinksButton>
+          </S.NavbarLinkContainer>
+        </S.LeftContainer>
+      </S.NavbarInnerContainer>
+      {extendNavbar && (
+        <S.NavbarExtendedContainer>
+          <S.NavbarLinkExtended to="/">Home</S.NavbarLinkExtended>
+          <S.NavbarLinkExtended to="/products">Products</S.NavbarLinkExtended>
+          <S.NavbarLinkExtended to="/contact">Contact us</S.NavbarLinkExtended>
+          <S.NavbarLinkExtended to="/about">About</S.NavbarLinkExtended>
+        </S.NavbarExtendedContainer>
+      )}
+    </S.NavbarContainer>
   );
 };
 
 export default NavBar;
 
-{/* <S.Li as={Link} to="/about">
+{
+  /* <S.Li as={Link} to="/about">
           O nas
         </S.Li>
         <S.Li as={Link} to="/specialization">
@@ -102,4 +132,5 @@ export default NavBar;
         </S.Li>
         <S.Li as={Link} to="/contact">
           Kontakt
-        </S.Li> */}
+        </S.Li> */
+}
