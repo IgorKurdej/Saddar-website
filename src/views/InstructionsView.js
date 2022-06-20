@@ -6,8 +6,8 @@ import Instructions from "../components/Instructions/Instructions";
 const InstructionsView = () => {
   return (
     <>
-      <LogoBar />
-      <NavBar />
+      {/*<LogoBar />*/}
+      {/*<NavBar />*/}
       <Instructions />
     </>
   );

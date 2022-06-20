@@ -17,8 +17,8 @@ const AnchorWithDetails = () => {
 
   return (
     <>
-      <LogoBar />
-      <NavBar />
+      {/*<LogoBar />*/}
+      {/*<NavBar />*/}
       <Wrapper>
         <ImageWrapper>
           <ImageBox />

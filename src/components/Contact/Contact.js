@@ -13,8 +13,6 @@ import { contacts } from "../../assets/Data";
 const Contact = () => {
   return (
     <>
-      <LogoBar />
-      <NavBar />
       <Image src={img} />
       <InformationWrapper>
         <ContactWrapper>

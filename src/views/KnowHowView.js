@@ -7,8 +7,8 @@ import KnowHow from "../components/KnowHow/KnowHow";
 const KnowHowView = () => {
   return (
     <Wrapper>
-      <LogoBar />
-      <NavBar />
+      {/*<LogoBar />*/}
+      {/*<NavBar />*/}
       <KnowHow />
     </Wrapper>
   );

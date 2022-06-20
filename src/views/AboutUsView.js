@@ -7,15 +7,16 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
+  //align-items: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 const AboutUsView = () => {
   return (
     <Wrapper>
-      <LogoBar />
-      <NavBar />
+      {/*<LogoBar />*/}
+      {/*<NavBar />*/}
       <AboutUs />
     </Wrapper>
   );

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import MenuIcon from '@mui/icons-material/Menu';
-import {FiMenu} from "react-icons/fi"
-import {MdMenuOpen} from "react-icons/md"
+import MenuIcon from "@mui/icons-material/Menu";
+import { FiMenu } from "react-icons/fi";
+import { MdMenuOpen } from "react-icons/md";
 
 // export const NavbarContainer = styled.nav`
 //   width: 100%;
@@ -104,7 +104,7 @@ export const Wrapper = styled.nav`
         : "transparent"
       : "black"};
   //background-color: #282c34;
-  position: ${(props) => props.isHomePage ? "fixed" : "sticky"};
+  position: ${(props) => (props.isHomePage ? "fixed" : "sticky")};
   /* position: sticky; */
   /* position: sticky; */
   top: 70px;
@@ -171,7 +171,7 @@ export const Menu = styled(FiMenu)`
   @media screen and (max-width: 1024px) {
     display: block;
   }
-`
+`;
 
 export const MenuOpen = styled(MdMenuOpen)`
   color: white;
@@ -185,9 +185,8 @@ export const MenuOpen = styled(MdMenuOpen)`
 
   @media screen and (max-width: 1024px) {
     display: block;
-    
   }
-`
+`;
 
 export const NavbarExtendedContainer = styled.div`
   display: flex;
@@ -212,5 +211,4 @@ export const NavbarLinkExtended = styled(Link)`
   font-family: Arial, sans-serif;
   text-decoration: none;
   margin: 12px;
-
 `;

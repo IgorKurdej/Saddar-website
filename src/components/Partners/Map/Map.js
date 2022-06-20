@@ -40,6 +40,7 @@ const Map = () => {
 
 const Wrapper = styled.div`
   text-align: center;
+  width: 100%;
 `;
 
 export default Map;

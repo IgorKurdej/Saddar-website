@@ -15,11 +15,17 @@ import PartnersView from "./views/PartnersView";
 import InstructionsView from "./views/InstructionsView";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import LogoBar from "./components/LogoBar/LogoBar";
+import NavBar from "./components/NavBar/NavBar";
 
 const App = () => {
+  // const location = useLocation(null);
+
   return (
     <div className="wrapper">
       <Router>
+        <LogoBar />
+        <NavBar />
         <ScrollToTop>
           <Routes>
             <Route path="/" element={<HomeView />} />

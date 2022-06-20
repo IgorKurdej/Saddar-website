@@ -6,8 +6,8 @@ import News from "../components/News/News";
 const NewsView = () => {
   return (
     <>
-      <LogoBar />
-      <NavBar />
+      {/*<LogoBar />*/}
+      {/*<NavBar />*/}
       <News />
     </>
   );

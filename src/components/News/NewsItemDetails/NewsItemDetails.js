@@ -13,8 +13,8 @@ const NewsItemDetails = () => {
 
   return (
     <>
-      <LogoBar />
-      <NavBar />
+      {/*<LogoBar />*/}
+      {/*<NavBar />*/}
       <Wrapper>
         <ImageWrapper>
           <Image src={img} />
@@ -29,6 +29,7 @@ const NewsItemDetails = () => {
 
 const Wrapper = styled.div`
   max-width: 1200px;
+  width: 100%;
   margin-top: 20px;
   // background-color: green;
   margin: 0 30px;
@@ -68,11 +69,11 @@ const Title = styled.h1`
 const Text = styled.p`
   font-size: 22px;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     font-size: 24px;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     font-size: 20px;
   }
 `;

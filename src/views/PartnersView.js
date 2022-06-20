@@ -1,15 +1,20 @@
 import React from "react";
-import LogoBar from "../components/LogoBar/LogoBar";
-import NavBar from "../components/NavBar/NavBar";
 import Partners from "../components/Partners/Partners";
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
 
 const PartnersView = () => {
   return (
-    <>
-      <LogoBar />
-      <NavBar />
+    <Wrapper>
       <Partners />
-    </>
+    </Wrapper>
   );
 };
 
