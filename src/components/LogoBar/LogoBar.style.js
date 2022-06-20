@@ -8,11 +8,11 @@ export const LogoBarWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: ${(props) => props.isHomePage && "fixed"};
+  position: ${(props) => props.isHomePage ? "fixed" : "sticky"};
   top: 0;
-  background-color: ${({ isHomePage, isScrollMove }) =>
-    isHomePage ? isScrollMove && "white" : "transparent"};
-  z-index: 3;
+  
+  background-color: ${({ isHomePage, isScrollMove }) => isHomePage ? isScrollMove ? "white" : "transparent" : "white"};
+  z-index: 30;
 
   animation: ${(props) => props.isScrollMove && "appear .75s ease"};
 
@@ -23,6 +23,11 @@ export const LogoBarWrapper = styled.div`
     to {
       opacity: 1;
     }
+  }
+
+  @media screen and (max-width: 1024px) {
+    background-color: black;
+    animation: none;
   }
 `;
 

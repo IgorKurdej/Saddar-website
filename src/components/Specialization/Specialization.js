@@ -9,17 +9,13 @@ import styled from "styled-components";
 import Modal from "../Modal/Modal";
 
 const Specialization = () => {
-  const [modalIsOpen, setIsOpen] = useState();
-
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
-
+  // const [modalIsOpen, setIsOpen] = useState();
   const [showMoreBudownictwo, setShowMoreBudownictwo] = useState(false);
   const [showMoreOgrod, setShowMoreOgrod] = useState(false);
   const [showMoreOgrodzenia, setShowMoreOgrodzenia] = useState(false);
 
   return (
-    <div>
+    <Wrapper>
       {/*<Modal isOpen={modalIsOpen} setIsOpen={setIsOpen} />*/}
       <TitleWithIcon title="Specjalizacje" icon={BusinessCenterIcon} />
       <ImageWrapper>
@@ -102,9 +98,13 @@ const Specialization = () => {
           </ShowMore>
         </PictureWithText>
       </ImageWrapper>
-    </div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  /* padding: 0 50px; */
+`
 
 const ImageWrapper = styled.div`
   display: flex;

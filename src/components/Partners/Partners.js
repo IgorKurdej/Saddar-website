@@ -56,7 +56,7 @@ const Wrapper = styled.div`
 `;
 
 const ImageBanner = styled.div`
-  width: 100vw;
+  width: 100%;
   background: url(${img}) no-repeat center;
   height: 400px;
   background-size: 100%;
