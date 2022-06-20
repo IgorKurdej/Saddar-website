@@ -181,7 +181,7 @@ export const MenuOpen = styled(MdMenuOpen)`
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-100%, 50%);
+  transform: translate(-50%, 50%);
 
   @media screen and (max-width: 1024px) {
     display: block;
