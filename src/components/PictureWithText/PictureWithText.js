@@ -1,6 +1,5 @@
 import React from "react";
 import * as S from "./PictureWithText.style";
-import img1 from "../../assets/img/AboutUs/pexels-nikolai-ulltang-323933.jpg";
 import { Link } from "react-router-dom";
 
 const PictureWithText = ({

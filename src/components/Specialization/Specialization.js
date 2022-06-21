@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import TitleWithIcon from "../TitleWithIcon/TitleWithIcon";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import PictureWithText from "../PictureWithText/PictureWithText";
-import img5 from "../../assets/img/specialization/pexels-elle-hughes-4501786.jpg";
-import img4 from "../../assets/img/specialization/ghozy-samudra-5C4LRRlyLJc-unsplash.jpg";
-import img6 from "../../assets/img/specialization/omar-lopez-CR24X-w0GDA-unsplash.jpg";
+// import img4 from "../../assets/img/specialization/ghozy-samudra-5C4LRRlyLJc-unsplash.jpg";
+// import img6 from "../../assets/img/specialization/omar-lopez-CR24X-w0GDA-unsplash.jpg";
+// import img5 from "../../assets/img/specialization/pexels-elle-hughes-4501786.jpg";
+import img5 from "../../assets/img/ourSolutions/pexels-rodolfo-quirós-1876045.jpg";
+import img4 from "../../assets/img/ourSolutions/stephen-hansen-R8i1awntfII-unsplash.jpg";
+import img6 from "../../assets/img/ourSolutions/pexels-emmanuel-ajayi-7260387.jpg";
 import styled from "styled-components";
 import Modal from "../Modal/Modal";
 
@@ -104,7 +107,7 @@ const Specialization = () => {
 
 const Wrapper = styled.div`
   /* padding: 0 50px; */
-`
+`;
 
 const ImageWrapper = styled.div`
   display: flex;

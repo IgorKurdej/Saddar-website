@@ -18,7 +18,7 @@ const Contact = () => {
         <ContactWrapper>
           <HeaderWrapper>
             <Header>Skontaktuj się z nami</Header>
-            <CallIcon />
+            {/*<CallIcon />*/}
           </HeaderWrapper>
           <Wrapper>
             {contacts.map((item) => (
@@ -29,7 +29,7 @@ const Contact = () => {
         <AddressWrapper>
           <HeaderWrapper>
             <Header>Adres</Header>
-            <LocationOnOutlinedIcon />
+            {/*<LocationOnOutlinedIcon />*/}
           </HeaderWrapper>
           <Wrapper>
             <ContactItem
@@ -81,6 +81,7 @@ const InformationWrapper = styled.div`
   display: flex;
   max-width: 1200px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 `;
 
 const ContactWrapper = styled.div`
