@@ -3,6 +3,7 @@ import styled from "styled-components";
 import LogoBar from "../LogoBar/LogoBar";
 import NavBar from "../NavBar/NavBar";
 import ContactItem from "./ContactItem/ContactItem";
+// import img from "../../assets/img/contact/pexels-cup-of-couple-6963626 (1).jpg";
 import img from "../../assets/img/contact/luca-bravo-fPoSK5XeyHw-unsplash.jpg";
 import Footer from "../Footer/Footer";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";

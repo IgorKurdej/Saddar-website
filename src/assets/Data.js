@@ -775,18 +775,25 @@ export const contacts = [
   // },
   {
     id: 4,
-    position: "Kierownik produkcji",
+    position: "Dyr. Produkcji",
     name: "Waldemar Federczyk",
     email: "waldemar.federczyk@saddar.eu",
     phone: "+48500633108",
   },
-  // {
-  //   id: 5,
-  //   position: "Dział badawczo-rozwojowy",
-  //   name: "Tomasz Waściszakowski",
-  //   email: "tomasz.wasciszakowski@saddar.eu",
-  //   phone: "+48 787404486",
-  // },
+  {
+    id: 5,
+    position: "Badania i Rozwój",
+    name: "Tomasz Waściszakowski",
+    email: "tomasz.wasciszakowski@saddar.eu",
+    phone: "+48787404486",
+  },
+  {
+    id: 6,
+    position: "Magazyn i Logistyka",
+    name: "Robert Hutkowski",
+    email: "robert.hutkowski@saddar.eu",
+    phone: "+48605189643",
+  },
   // {
   //   id: 6,
   //   position: "Administracja i programy unijne",
@@ -796,7 +803,7 @@ export const contacts = [
   // },
   {
     id: 7,
-    position: "Komunikacja",
+    position: "Komunikacja i handel międzynarodowy",
     name: "Renata Żukowska",
     email: "renata.zukowska@saddar.eu",
     phone: "+48609372850",

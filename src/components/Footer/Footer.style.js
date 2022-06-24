@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Wrapper = styled.div`
   max-width: 1200px;
@@ -13,9 +14,11 @@ export const Wrapper = styled.div`
 `;
 
 export const SocialsWrapper = styled.div`
-  width: 100px;
+  width: 60px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
+
+export const SocialIcon = styled(Link)``;
