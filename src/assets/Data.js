@@ -34,59 +34,10 @@ import pdfScxg from "./pdf/kartyProduktow/scxg.pdf";
 //import articles images
 import img1 from "../assets/img/articles/usa-pl.jpeg";
 import img2 from "../assets/img/articles/image2.png";
-import img3 from "../assets/img/articles/image3.png";
+import img3 from "../assets/img/articles/aaa.jpg";
+import img4 from '../assets/img/articles/image3.png'
 
 export const products = [
-  {
-    id: 2,
-    name: "PSK SCR",
-    category: "wkręcane",
-    size: "4x4x24",
-    img: pskScr,
-    pdf: pdfPskScr,
-    sizes: [
-      {
-        symbol: "PSK SCR 60x40x600G",
-        dimension: "60x40x600",
-      },
-      {
-        symbol: "PSK SCR 61x61x600G ",
-        dimension: "61x61x600",
-      },
-      {
-        symbol: "PSK SCR 71x71x600G",
-        dimension: "71x71x600",
-      },
-      {
-        symbol: "PSK SCR 71x71x720G",
-        dimension: "71x71x720",
-      },
-      {
-        symbol: "PSK SCR 76x76x600G",
-        dimension: "76x76x600",
-      },
-      {
-        symbol: "PSK SCR 76x76x720G",
-        dimension: "76x76x720",
-      },
-      {
-        symbol: "PSK SCR 91x91x600G",
-        dimension: "91x91x600",
-      },
-      {
-        symbol: "PSK SCR 91x91x720G",
-        dimension: "91x91x720",
-      },
-      {
-        symbol: "PSK SCR 98x98x720G",
-        dimension: "98x98x720",
-      },
-      {
-        symbol: "PSK SCR 101x101x720G",
-        dimension: "101x101x720",
-      },
-    ],
-  },
   {
     id: 3,
     name: "PSK WST",
@@ -146,6 +97,114 @@ export const products = [
     ],
   },
   {
+    id: 12,
+    name: "PSK WEX",
+    category: "do betonowania",
+    size: "",
+    img: pskWex,
+    pdf: pdfPskWex,
+    sizes: [
+      {
+        symbol: "PSK WEX 71x71x750G",
+        dimension: " 71x71x750  ",
+      },
+      {
+        symbol: "PSK WEX 71x71x900G",
+        dimension: "71x71x900",
+      },
+      {
+        symbol: "PSK WEX 76x76x750G ",
+        dimension: "76x76x750",
+      },
+      {
+        symbol: "PSK WEX 76x76x900G ",
+        dimension: "76x76x900",
+      },
+      {
+        symbol: "PSK WEX 91x91x750G",
+        dimension: "91x91x750",
+      },
+      {
+        symbol: "PSK WEX 91x91x900G",
+        dimension: "91x91x900",
+      },
+      {
+        symbol: "PSK WEX 98x98x750G",
+        dimension: "98x98x750 ",
+      },
+      {
+        symbol: "PSKWEX 98x98x900G",
+        dimension: "98x98x900",
+      },
+      {
+        symbol: "PSK WEX 101x101x750G",
+        dimension: "101x101x750",
+      },
+      {
+        symbol: "PSK WEX 101x101x900G",
+        dimension: "101x101x900",
+      },
+    ],
+  },
+  {
+    id: 13,
+    name: "PSK WHQ",
+    category: "do betonowania",
+    size: "",
+    img: pskWqh,
+    pdf: pdfPskWqh,
+    sizes: [
+      {
+        symbol: "PSKWHQ",
+        dimension: "71x71x750",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "71x71x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "75x75x750",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "75x75x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "91x91x750",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "91x91x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "98x98x750 ",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "98x98x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "101x101x750",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "101x101x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "121x121x900",
+      },
+      {
+        symbol: "PSKWHQ",
+        dimension: "141x141x900",
+      },
+    ],
+  },
+  {
     id: 4,
     name: "PSO WSP",
     category: "wbijane",
@@ -192,6 +251,28 @@ export const products = [
     ],
   },
   {
+    id: 14,
+    name: "PSO WSG",
+    category: "do betonowania",
+    size: "",
+    img: psoWsg,
+    pdf: pdfPsoWsg,
+    sizes: [
+      {
+        symbol: "PSO WSG 101x900G ",
+        dimension: "101x900",
+      },
+      {
+        symbol: "PSO WSG 121x900G",
+        dimension: "121x900",
+      },
+      {
+        symbol: "PSO WSG 141x900G",
+        dimension: "141x900",
+      },
+    ],
+  },
+  {
     id: 5,
     name: "PSO SCR",
     category: "wkręcane",
@@ -210,92 +291,54 @@ export const products = [
     ],
   },
   {
-    id: 6,
-    name: "CSK XXX",
-    category: "daszki",
-    size: "4x4",
-    img: cskXxx,
-    pdf: pdfCxxXxx,
+    id: 2,
+    name: "PSK SCR",
+    category: "wkręcane",
+    size: "4x4x24",
+    img: pskScr,
+    pdf: pdfPskScr,
     sizes: [
       {
-        symbol: "CSK XXX 46x46Z",
-        dimension: "46x46",
+        symbol: "PSK SCR 60x40x600G",
+        dimension: "60x40x600",
       },
       {
-        symbol: "CSK XXX 51x51Z",
-        dimension: "51x51",
+        symbol: "PSK SCR 61x61x600G ",
+        dimension: "61x61x600",
       },
       {
-        symbol: "CSK XXX 71x71G",
-        dimension: "71x71",
+        symbol: "PSK SCR 71x71x600G",
+        dimension: "71x71x600",
       },
       {
-        symbol: "CSK XXX 75x75G ",
-        dimension: "75x75",
+        symbol: "PSK SCR 71x71x720G",
+        dimension: "71x71x720",
       },
       {
-        symbol: "CSK XXX 91x91G",
-        dimension: "91x91",
+        symbol: "PSK SCR 76x76x600G",
+        dimension: "76x76x600",
       },
       {
-        symbol: "CSK XXX 101x101G",
-        dimension: "101x101",
+        symbol: "PSK SCR 76x76x720G",
+        dimension: "76x76x720",
+      },
+      {
+        symbol: "PSK SCR 91x91x600G",
+        dimension: "91x91x600",
+      },
+      {
+        symbol: "PSK SCR 91x91x720G",
+        dimension: "91x91x720",
+      },
+      {
+        symbol: "PSK SCR 98x98x720G",
+        dimension: "98x98x720",
+      },
+      {
+        symbol: "PSK SCR 101x101x720G",
+        dimension: "101x101x720",
       },
     ],
-  },
-  {
-    id: 7,
-    name: "PSK BHQ",
-    category: "do betonowania",
-    size: "4x4",
-    img: pskBhq,
-    pdf: pdfPskBhq,
-    sizes: [
-      {
-        symbol: "PSK BHQ 71x71x330G",
-        dimension: "71x71x330",
-      },
-      {
-        symbol: "PSK BHQ 91x91x310G",
-        dimension: "91x91x310",
-      },
-      {
-        symbol: "PSK BHQ 101x101x310G",
-        dimension: "101x101x310",
-      },
-      {
-        symbol: "PSK BHQ 75x75x330G ",
-        dimension: "75x75x330",
-      },
-    ],
-  },
-  {
-    id: 8,
-    name: "RSXQ",
-    category: "do betonowania",
-    size: "38x1500",
-    img: rsxg,
-    sizes: [
-      {
-        symbol: "RSXG15",
-        dimension: "Ø 38x1500",
-      },
-      {
-        symbol: "RSXG17",
-        dimension: "Ø 38x1750",
-      },
-      {
-        symbol: "RSXG20",
-        dimension: "Ø 38x2000",
-      },
-    ],
-  },
-  {
-    id: 9,
-    name: "Kran",
-    category: "do betonowania",
-    size: "",
-    img: kran,
   },
   {
     id: 10,
@@ -370,141 +413,88 @@ export const products = [
     ],
   },
   {
-    id: 12,
-    name: "PSK WEX",
+    id: 7,
+    name: "PSK BHQ",
     category: "do betonowania",
-    size: "",
-    img: pskWex,
-    pdf: pdfPskWex,
+    size: "4x4",
+    img: pskBhq,
+    pdf: pdfPskBhq,
     sizes: [
       {
-        symbol: "PSK WEX 71x71x750G",
-        dimension: " 71x71x750  ",
+        symbol: "PSK BHQ 71x71x330G",
+        dimension: "71x71x330",
       },
       {
-        symbol: "PSK WEX 71x71x900G",
-        dimension: "71x71x900",
+        symbol: "PSK BHQ 91x91x310G",
+        dimension: "91x91x310",
       },
       {
-        symbol: "PSK WEX 76x76x750G ",
-        dimension: "76x76x750",
+        symbol: "PSK BHQ 101x101x310G",
+        dimension: "101x101x310",
       },
       {
-        symbol: "PSK WEX 76x76x900G ",
-        dimension: "76x76x900",
-      },
-      {
-        symbol: "PSK WEX 91x91x750G",
-        dimension: "91x91x750",
-      },
-      {
-        symbol: "PSK WEX 91x91x900G",
-        dimension: "91x91x900",
-      },
-      {
-        symbol: "PSK WEX 98x98x750G",
-        dimension: "98x98x750 ",
-      },
-      {
-        symbol: "PSKWEX 98x98x900G",
-        dimension: "98x98x900",
-      },
-      {
-        symbol: "PSK WEX 101x101x750G",
-        dimension: "101x101x750",
-      },
-      {
-        symbol: "PSK WEX 101x101x900G",
-        dimension: "101x101x900",
+        symbol: "PSK BHQ 75x75x330G ",
+        dimension: "75x75x330",
       },
     ],
   },
   {
-    id: 13,
-    name: "PSK WQH",
-    category: "do betonowania",
-    size: "",
-    img: pskWqh,
-    pdf: pdfPskWqh,
+    id: 6,
+    name: "CSK XXX",
+    category: "daszki",
+    size: "4x4",
+    img: cskXxx,
+    pdf: pdfCxxXxx,
     sizes: [
       {
-        symbol: "PSKWHQ",
-        dimension: "71x71x750",
+        symbol: "CSK XXX 46x46Z",
+        dimension: "46x46",
       },
       {
-        symbol: "PSKWHQ",
-        dimension: "71x71x900",
+        symbol: "CSK XXX 51x51Z",
+        dimension: "51x51",
       },
       {
-        symbol: "PSKWHQ",
-        dimension: "75x75x750",
+        symbol: "CSK XXX 71x71G",
+        dimension: "71x71",
       },
       {
-        symbol: "PSKWHQ",
-        dimension: "75x75x900",
+        symbol: "CSK XXX 75x75G ",
+        dimension: "75x75",
       },
       {
-        symbol: "PSKWHQ",
-        dimension: "91x91x750",
+        symbol: "CSK XXX 91x91G",
+        dimension: "91x91",
       },
       {
-        symbol: "PSKWHQ",
-        dimension: "91x91x900",
-      },
-      {
-        symbol: "PSKWHQ",
-        dimension: "98x98x750 ",
-      },
-      {
-        symbol: "PSKWHQ",
-        dimension: "98x98x900",
-      },
-      {
-        symbol: "PSKWHQ",
-        dimension: "101x101x750",
-      },
-      {
-        symbol: "PSKWHQ",
-        dimension: "101x101x900",
-      },
-      {
-        symbol: "PSKWHQ",
-        dimension: "121x121x900",
-      },
-      {
-        symbol: "PSKWHQ",
-        dimension: "141x141x900",
+        symbol: "CSK XXX 101x101G",
+        dimension: "101x101",
       },
     ],
   },
+];
+
+export const productsSec = [
   {
-    id: 14,
-    name: "PSO WSG",
+    id: 8,
+    name: "RSXQ",
     category: "do betonowania",
-    size: "",
-    img: psoWsg,
-    pdf: pdfPsoWsg,
+    size: "38x1500",
+    img: rsxg,
     sizes: [
       {
-        symbol: "PSO WSG 101x900G ",
-        dimension: "101x900",
+        symbol: "RSXG15",
+        dimension: "Ø 38x1500",
       },
       {
-        symbol: "PSO WSG 121x900G",
-        dimension: "121x900",
+        symbol: "RSXG17",
+        dimension: "Ø 38x1750",
       },
       {
-        symbol: "PSO WSG 141x900G",
-        dimension: "141x900",
+        symbol: "RSXG20",
+        dimension: "Ø 38x2000",
       },
     ],
-  },
-  {
-    id: 15,
-    name: "Rozbijak PET",
-    category: "do betonowania",
-    size: "",
-    img: rP,
   },
   {
     id: 16,
@@ -584,7 +574,21 @@ export const products = [
       },
     ],
   },
-];
+  {
+    id: 9,
+    name: "Kran",
+    category: "do betonowania",
+    size: "",
+    img: kran,
+  },
+  {
+    id: 15,
+    name: "Rozbijak PET",
+    category: "do betonowania",
+    size: "",
+    img: rP,
+  },
+]
 
 export const historyData = [
   {
@@ -623,6 +627,10 @@ export const historyData = [
   {
     year: "2017",
     text: "Eko - kotwa SADDAR zostaje wyposażona w opatentowany system przenoszenia naprężeń SDS - Stress Dstribution System SDS oraz SHR System (wzmocnienie otworów na śruby specjalnym nadlewem kompozytu). Rok 2017 to również rok bardzo intensywnej ekspansji zagranicznej. Do odbiorców produktów SADDAR dołączają kolejne kraje europejskie: Litwa, Estonia, Francja, Czechy i Słowacja. Na rynku krajowym eko - kotwy są dostępne w PSB MRÓWKA, Merkury Market, RCMB Majster. Kolejni odbiorcy pojawiają się na rynku niemieckim. Ogromnym sukcesem jest również podbój kontynentu amerykańskiego i pierwsze dostawy do Kanady. Łącznie produkty SADDAR są dostępne jest na dwóch kontynentach: w Europie w 26 sieciach handlowych w 15 krajach; w Ameryce Północnej w The Home Depot w Kanadzie",
+  },
+  {
+    year: "2017",
+    text: "Nowe logo firmy Saddar",
   },
   {
     // year: "2017–2018",
@@ -749,6 +757,35 @@ export const news = [
   //     "Cały artykuł: https://swiatoze.pl/polska-ekologiczna-technologia-do-budowy-farm-pv-\n" +
   //     "wchodzi-na-europejski-rynek/",
   // },
+  {
+    id: 4,
+    img: img4,
+    date: "21 lutego 2022",
+    title: "Polska ekologiczna technologia do budowy farm PV wchodzi na europejski rynek",
+    mainText: "Flagowym produktem firmy są kotwy wbijane, wkręcane i przykręcane w niemal każdy rodzaj gruntu czy powierzchni.",
+    contentText:
+        "Polska ekologiczna technologia do budowy farm PV wchodzi na europejski rynek.\n" +
+        "Flagowym produktem firmy są kotwy wbijane, wkręcane i przykręcane w niemal każdy\n" +
+        "rodzaj gruntu czy powierzchni. Na szeroką skalę używane są m.in . przy instalacji\n" +
+        "ogromnych farm fotowoltaicznych. Montaż jest szybki i przyjazny środowisku: bez użycia\n" +
+        "cementu oraz potrzeby dostosowania gruntu z użyciem ciężkiego sprzętu. W razie\n" +
+        "potrzeby, instalacje można po prostu przenieść w inne miejsce bez uszczerbku dla\n" +
+        "środowiska.\n" +
+        "Bazowy surowiec PET pochodzi z recyklingu głównie plastikowych butelek po wodzie\n" +
+        "mineralnej czy napojach gazowanych. Stanowi to istotny czynnik ochrony środowiska i\n" +
+        "przekształcenia plastikowych odpadów poużytkowych czy poprodukcyjnych w\n" +
+        "pełnowartościowy nowy wyrób.\n" +
+        "Taki produkt zastępuje droższy, wykonany z blachy stalowej, którego wytworzenie wymaga\n" +
+        "zużycia dużej ilości energii i kopalin nieodnawialnych.\n" +
+        "Dodatkowo eko kotwa SADDAR wbita w ziemię nigdy nie będzie korodować i nie ulegnie\n" +
+        "działaniom czynników atmosferycznych, czego nie można powiedzieć o wyrobach ze stali\n" +
+        "lakierowanej lub pokrytej galwanicznie mikronową powłoką.\n" +
+        "Co ważne, oferowane przez polską firmę eko kotwy można ponownie zmielić i\n" +
+        "przetworzyć. Produkt wpisuje się zatem w wymagania stawiane przez Unię Europejską w\n" +
+        "zakresie gospodarki w obiegu zamkniętym.\n" +
+        "\nCały artykuł: https://swiatoze.pl/polska-ekologiczna-technologia-do-budowy-farm-pv-\n" +
+        "wchodzi-na-europejski-rynek/"
+    },
 ];
 
 export const contacts = [

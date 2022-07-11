@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const TitleWithIcon = ({ title, icon: Icon }) => {
+const TitleWithIcon = ({ title, icon: Icon, onlyTitle }) => {
   return (
     <Wrapper>
-      <Title secondary>Nasze</Title>
+        {!onlyTitle && <Title secondary>Nasze</Title>}
       <IconWrapper>
         <Title>{title}</Title>
         <Icon style={{ fontSize: "32px", color: "green" }} />

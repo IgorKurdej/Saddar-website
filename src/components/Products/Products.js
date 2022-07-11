@@ -5,7 +5,8 @@ import ProductItem from "../../components/ProductItem/ProductItem";
 import CategoryItem from "./CategoryItem/CategoryItem";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
 import TitleWithIcon from "../TitleWithIcon/TitleWithIcon";
-import { products } from "../../assets/Data";
+import { products, productsSec } from "../../assets/Data";
+import styled from 'styled-components';
 
 const categories = [
   "Wbijane",
@@ -21,7 +22,7 @@ const categories = [
 const Products = () => {
   return (
     <S.Wrapper>
-      <TitleWithIcon title="Produkty" icon={ShoppingBasketOutlinedIcon} />
+      <TitleWithIcon title="Kotwy" icon={ShoppingBasketOutlinedIcon} />
       {/*<S.Categories>*/}
       {/*  {*/}
       {/*    categories.map((category) => (*/}
@@ -35,8 +36,18 @@ const Products = () => {
           <ProductItem key={item.id} item={item} />
         ))}
       </S.ProductsList>
+      <TitleWithIcon title="Systemy ogrodzeniowe" icon={ShoppingBasketOutlinedIcon} />
+        <S.ProductsList>
+            {productsSec.map((item) => (
+                <ProductItem key={item.id} item={item} />
+            ))}
+        </S.ProductsList>
     </S.Wrapper>
   );
 };
+
+const Title = styled.span`
+  font-size: 32px;
+`
 
 export default Products;

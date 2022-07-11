@@ -3,6 +3,7 @@ import styled from "styled-components";
 import LogoBar from "../LogoBar/LogoBar";
 import NavBar from "../NavBar/NavBar";
 import ContactItem from "./ContactItem/ContactItem";
+import GoogleMapReact from 'google-map-react';
 // import img from "../../assets/img/contact/pexels-cup-of-couple-6963626 (1).jpg";
 import img from "../../assets/img/contact/luca-bravo-fPoSK5XeyHw-unsplash.jpg";
 import Footer from "../Footer/Footer";
@@ -47,6 +48,17 @@ const Contact = () => {
             />
           </Wrapper>
         </AddressWrapper>
+        {/*<GoogleMapReact*/}
+        {/*    bootstrapURLKeys={{ key: "" }}*/}
+        {/*    // defaultCenter={defaultProps.center}*/}
+        {/*    // defaultZoom={defaultProps.zoom}*/}
+        {/*>*/}
+        {/*  <AnyReactComponent*/}
+        {/*      lat={59.955413}*/}
+        {/*      lng={30.337844}*/}
+        {/*      text="My Marker"*/}
+        {/*  />*/}
+        {/*</GoogleMapReact>*/}
       </InformationWrapper>
       {/*<Header>Skontaktuj się z nami</Header>*/}
       {/*<Wrapper>*/}

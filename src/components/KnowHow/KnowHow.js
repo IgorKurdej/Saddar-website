@@ -11,6 +11,7 @@ import logo1 from "../../assets/img/knowHow/bv.jpg";
 import logo2 from "../../assets/img/knowHow/tuv.png";
 import logo3 from "../../assets/img/knowHow/lm.jpg";
 import logo4 from "../../assets/img/knowHow/ks.jpg";
+import banner from '../../assets/img/knowHow/POZIOM_KOLOR_RPOFLAGA_RPMAZOWSZEEFRR.jpg'
 
 const KnowHow = () => {
   return (
@@ -160,6 +161,27 @@ const KnowHow = () => {
           </AuditItem>
         </AuditsWrapper>
       </TextWrapper>
+      <TitleWithIcon title="Programy Unijne" icon={CloudOutlinedIcon} />
+      <TextWrapper>
+        <Text>Informujemy, iż firma P.H.U. SADDAR Dariusz Sadowiński realizuje projekt pn. <b>"Wdrożenie gamy autorskich ekokotew SADDAR jako efekt realizacji prac B+R". </b>
+          Projekt jest finansowany w ramach Priorytetu III " Rozwój potencjału innowacyjnego i przedsiębiorczości", działanie 3.3 "Innowacje w MŚP"
+        </Text>
+        <Text><b>Nazwa beneficjenta:</b> P.H.U SADDAR Dariusz Sadowiński</Text>
+        <Text><b>Wartość projektu:</b> 2 192 893,00 zł</Text>
+        <Text><b>Wartość dofinansowania:</b> 959 605,20 zł</Text>
+
+
+        <Text>Projekt współfinansowany przez Unię Europejską z Europejskiego Funduszu Rozwoju Regionalnego</Text>
+
+        <Text><b>Opis projektu:</b></Text>
+
+        <Text>Przedmiotem projektu realizowanego przez firmę PHU SADDAR jest wdrożenie własnych prac badawczo - rozwojowych objętych dofinansowaniem w ramach
+          działania 1.2 Regionalnego Programu Operacyjnego Województwa Mazowieckiego na lata 2014 -2020 pt. "Innowacyjna gama autorskich ekokotew Saddar
+          o różnych właściwościach i przeznaczeniu".</Text>
+        <Text>Głównym celem projektu jest wzrost konkurencyjności i poszerzenia oferty produktowej P.H.U. SADDAR na rynku.
+        </Text>
+        <Banner alt="" src={banner} />
+      </TextWrapper>
     </Wrapper>
   );
 };
@@ -221,5 +243,10 @@ const AuditImg = styled.img`
   max-height: 100px;
   margin: 20px 0 10px;
 `;
+
+const Banner = styled.img`
+  width: 100%;
+  margin-top: 20px;
+`
 
 export default KnowHow;

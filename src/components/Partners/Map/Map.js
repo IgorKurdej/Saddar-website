@@ -28,6 +28,7 @@ const data = [
   { country: "uk", value: " " },
   { country: "ca", value: " " },
   { country: "ie", value: " " },
+  { country: "us", value: " " },
 ];
 
 const Map = () => {

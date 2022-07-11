@@ -10,6 +10,7 @@ import img4 from "../../assets/img/services/scott-graham-OQMZwNd3ThU-unsplash.jp
 
 const Services = () => {
   const [readMore, setReadMore] = useState(false);
+  const [readMoreSec, setReadMoreSec] = useState(false);
 
   return (
     <Wrapper>
@@ -30,15 +31,16 @@ const Services = () => {
           <li>- produkcję koncentratów barwiących na bazie poliestrów</li>
         </ul>
         Nasz park maszynowy pozwala na przetwarzanie ok. 30-tu gatunków
-        termoplastycznych tworzyw sztucznych. Najwyższa jakość wykonywanych
-        regranulatów umożliwia ich zastosowanie w różnorodnych gałęziach
-        przemysłu, m.in. w budownictwie, elektronice, motoryzacji,
-        telekomunikacji, w produkcji opakowań, obuwi i przemyśle włókienniczym.
-        Specjalizujemy się w wytłaczaniu modyfikowanych tworzyw konstrukcyjnych
-        wzmacnianych włóknem szklanym i ich przerobem metodą wtryskową.
-        Wykonujemy usługi w zakresie granulacji:
+        termoplastycznych tworzyw sztucznych.
         {readMore && (
           <>
+            Najwyższa jakość wykonywanych
+            regranulatów umożliwia ich zastosowanie w różnorodnych gałęziach
+            przemysłu, m.in. w budownictwie, elektronice, motoryzacji,
+            telekomunikacji, w produkcji opakowań, obuwi i przemyśle włókienniczym.
+            Specjalizujemy się w wytłaczaniu modyfikowanych tworzyw konstrukcyjnych
+            wzmacnianych włóknem szklanym i ich przerobem metodą wtryskową.
+            Wykonujemy usługi w zakresie granulacji:
             <ul>
               <li>- ABS w postaci regranulatu czystego i modyfikowanego</li>
               <li>- ABS/PC w postaci regranulatu</li>
@@ -120,14 +122,24 @@ const Services = () => {
             - realizację kompleksowych projektów, od koncepcji i doradztwa, po
             projektowanie, wykonanie form wtryskowych i produkcję seryjną
           </li>
-          <li>- automatyzację procesów produkcyjnych w branży PTS,</li>
-          <li>- budowa podajników IML,</li>
-          <li>- serwis nietypowych maszyn do PTS</li>
         </ul>
-        Prowadzimy również szkolenia w zakresie obsługi maszyn do PTS, jak
-        również w zakresie ustawiania parametrów wtrysku, Dodatkowo dysponujemy
-        niezbędnym do realizacji zaawansowanych projektów biurem
-        konstrukcyjno-technologicznym.
+        {readMoreSec &&
+          <>
+            <ul>
+              <li>- automatyzację procesów produkcyjnych w branży PTS,</li>
+              <li>- budowa podajników IML,</li>
+              <li>- serwis nietypowych maszyn do PTS</li>
+            </ul>
+            Prowadzimy również szkolenia w zakresie obsługi maszyn do PTS, jak
+            również w zakresie ustawiania parametrów wtrysku, Dodatkowo dysponujemy
+            niezbędnym do realizacji zaawansowanych projektów biurem
+            konstrukcyjno-technologicznym.
+          </>
+        }
+        <br/>
+        <button onClick={() => setReadMoreSec(!readMoreSec)}>
+          Pokaż więcej/mniej
+        </button>
       </PictureWithText>
       <PictureWithText
         direction="imgRight"
