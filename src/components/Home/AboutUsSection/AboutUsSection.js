@@ -25,7 +25,7 @@ const AboutUsSection = () => (
             Opracowaliśmy i wdrożyliśmy innowacyjną i unikalną w skali światowej
             technologię wytwarzania kompozytu, do którego używamy tworzywa PET
             pochodzącego z recyclingu plastikowych butelek. Kompozyt służy nam
-            do produkcji systemu Eko - Kotew mających szerokie zastosowanie w
+            do produkcji systemu Eko - Kotew SADDAR mających szerokie zastosowanie w
             budownictwie, instalacji farm fotowoltaicznych czy architekturze
             ogrodowej.
           </p>

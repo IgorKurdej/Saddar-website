@@ -24,7 +24,7 @@ const Home = () => {
         button="Dowiedz się więcej"
         to="know-how"
       >
-        System kompozytowych Eko - Kotew został oparty na zastrzeżonej
+        System kompozytowych Eko - Kotew SADDAR został oparty na zastrzeżonej
         konstrukcji i innowacyjnej idei wykorzystania do produkcji nowego
         materiału: kompozytu PET zbrojonego włóknem szklanym. Opracowane
         tworzywo - krystalizowany PET o podwyższonej udarności ma dużą sztywność
