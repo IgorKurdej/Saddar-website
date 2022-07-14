@@ -23,7 +23,7 @@ const KnowHow = () => {
           Produkcja Eko - Kotew SADDAR wymagała opracowania technologii
           wytwarzania wysoko - wytrzymałościowego tworzywa PET modyfikowanego
           kilkoma składnikami chemicznymi i wzmacnianego włóknem szklanym.
-          Kształt i wymiary Eko - Kotew zostały przez twórcę zaprojektowane tak,
+          Kształt i wymiary Eko - Kotew SADDAR zostały przez twórcę zaprojektowane tak,
           że:
         </Text>
         <Ul>
@@ -52,22 +52,22 @@ const KnowHow = () => {
           komputerowe do analiz MES (metoda elementów skończonych) określane są
           najsłabsze punkty nowej geometrii produktu i następnie korygowane.
           Powtarzając tę czynność kilkukrotnie osiągamy zoptymalizowany model
-          ekokotwy SADDAR i dzięki temu maksymalną jej wytrzymałość.
+          Eko - kotwy SADDAR i dzięki temu maksymalną jej wytrzymałość.
           Zastosowanie technologii wtrysku wysokociśnieniowego pozwala nam na
-          opracowanie Eko - Eotew o bardziej skomplikowanych kształtach niż
+          opracowanie Eko - Kotew SADDAR o bardziej skomplikowanych kształtach niż
           kotwy stalowe.
         </Text>
         <Img src={Mes} alt="" />
         <Text>
           W kotwie stalowej występują duże obszary koncentracji naprężeń przy
           podstawie kieszeni na słupek - kolor czerwony. Skutkuje to pękaniem
-          spawów w tym obszarze. W Eko - Kotwach SADDAR nie ma takiego
+          spawów w tym obszarze. W Eko - kotwach SADDAR nie ma takiego
           zagrożenia, gdyż nie występują tak duże obszary koncentracji naprężeń.
           Kolorowa skala w prawym dolnym rogu obydwu analiz obrazuje naprężenia.
           Do obydwu symulacji przyjęto takie same obciążenia boczne:
         </Text>
         <Ul>
-          <Li>na szczycie skali ekokotwy SADDAR mamy 123 MPa,</Li>
+          <Li>na szczycie skali Eko - kotwy SADDAR mamy 123 MPa,</Li>
           <Li>na szczycie skali kotwy stalowej mamy 247 MPa.</Li>
         </Ul>
         <Text>
@@ -93,7 +93,7 @@ const KnowHow = () => {
       <TitleWithIcon title="Patenty" icon={MenuBookOutlinedIcon} />
       <TextWrapper>
         <Text>
-          Stworzony system Eko - Kotew Saddar jest objęty chroniony prawami
+          Stworzony system Eko - kotew Saddar jest objęty chroniony prawami
           autorskimi. Są to wzory przemysłowe nr: RCD 002595843-0001 do RCD
           002595843-0015, 001254528-0001, 001254528-0002 Patent nr P.419267
         </Text>
@@ -116,7 +116,7 @@ const KnowHow = () => {
           </Li>
           <Li>
             System SDS przenosi ponadto energię (siłę) wbijającą bezpośrednio na
-            pióra szpica Eko- Kotwy Saddar eliminując ryzyko uszkodzenia Eko-
+            pióra szpica Eko- Kotwy SADDAR eliminując ryzyko uszkodzenia Eko-
             Kotwy podczas wbijania
           </Li>
         </Ul>

@@ -22,7 +22,7 @@ const AboutUs = () => {
         PHU SADDAR to rodzinna firma działająca z sukcesem od ponad 30 lat na
         rynku polskim oraz rynkach międzynarodowych. W 2004 roku założyciel
         firmy Pan Dariusz Sadowiński opracował i wdrożył do produkcji autorski
-        projekt w skali światowej – system kompozytowych eko kotew SADDAR oparty
+        projekt w skali światowej – system kompozytowych Eko-kotew SADDAR oparty
         na zastrzeżonej konstrukcji i innowacyjnej idei wykorzystania do
         produkcji kompozytu PET zbrojonego włóknem szklanym. Produkt ten nie
         tylko wyznaczył nowe kierunki rozwoju działalności firmy, ale przede
