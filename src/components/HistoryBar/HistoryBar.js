@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { historyData } from "../../assets/Data";
+import logo from '../../assets/img/saddar_logo_425.png'
 
 const HistoryBar = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -26,20 +27,28 @@ const HistoryBar = () => {
               <>
                 <LeftSide>
                   <Year>{item.year}</Year>
+
                 </LeftSide>
                 <RightSide>
                   <GreenBar side="left" />
                   <Paragraph>{item.text}</Paragraph>
+                  {
+                    item.text === "Nowe logo firmy Saddar" && <Logo src={logo} alt=""/>
+                  }
                 </RightSide>
               </>
             ) : idx % 2 === 0 ? (
               <>
                 <LeftSide>
                   <Year>{item.year}</Year>
+
                 </LeftSide>
                 <RightSide>
                   <GreenBar side="left" />
                   <Paragraph>{item.text}</Paragraph>
+                  {
+                    item.text === "Nowe logo firmy Saddar" && <Logo src={logo} alt=""/>
+                  }
                 </RightSide>
               </>
             ) : (
@@ -47,9 +56,13 @@ const HistoryBar = () => {
                 <LeftSide>
                   <GreenBar side="right" />
                   <Paragraph>{item.text}</Paragraph>
+                  {
+                    item.text === "Nowe logo firmy Saddar" && <Logo src={logo} alt=""/>
+                  }
                 </LeftSide>
                 <RightSide>
                   <Year>{item.year}</Year>
+
                 </RightSide>
               </>
             )}
@@ -88,6 +101,7 @@ const RightSide = styled.div`
   flex: 1;
   padding: 35px 30px;
   position: relative;
+  display: inline;
 
   @media (max-width: 700px) {
     padding-right: 50px;
@@ -112,6 +126,11 @@ const GreenBar = styled.div`
   top: 35px;
   left: ${(props) => props.side === "left" && "0"};
   right: ${(props) => props.side === "right" && "0"};
+`;
+
+const Logo = styled.img`
+  width: 150px;
+  margin: 20px 10px;
 `;
 
 export default HistoryBar;

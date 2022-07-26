@@ -14,8 +14,6 @@ import image from "../../assets/img/articles/image1.jpg";
 // }
 
 const ReadMoreCard = (props) => {
-  console.log(props.contentText);
-
   return (
     <Wrapper>
       <Image mainArticle={props.mainArticle} src={props.img} image={image} />

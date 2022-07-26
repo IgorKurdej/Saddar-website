@@ -167,6 +167,7 @@ const Services = () => {
 };
 
 const Wrapper = styled.div`
+  min-width: 400px;
   max-width: 1200px;
 
   ul {

@@ -9,6 +9,8 @@ import startup from "../../assets/img/startup-593341_1920.jpg";
 import PictureWithText from "../PictureWithText/PictureWithText";
 import TitleWithIcon from "../TitleWithIcon/TitleWithIcon";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import CloudOutlinedIcon from "@mui/icons-material/CloudOutlined";
+import banner from "../../assets/img/knowHow/POZIOM_KOLOR_RPOFLAGA_RPMAZOWSZEEFRR.jpg";
 
 const Home = () => {
   return (
@@ -32,7 +34,29 @@ const Home = () => {
         jakością i innowacyjnością naszych produktów z tradycyjnymi produktami
         wykonanymi ze stali.
       </PictureWithText>
-      {/*<SectionSustainabilityPolicy />*/}
+        <TitleWithIcon title="Programy Unijne" icon={CloudOutlinedIcon} />
+        <TextWrapper>
+            <Text>Informujemy, iż firma P.H.U. SADDAR Dariusz Sadowiński realizuje projekt pn. <b>"Wdrożenie gamy autorskich ekokotew SADDAR jako efekt realizacji prac B+R". </b>
+                Projekt jest finansowany w ramach Priorytetu III " Rozwój potencjału innowacyjnego i przedsiębiorczości", działanie 3.3 "Innowacje w MŚP"
+            </Text>
+            <Text><b>Nazwa beneficjenta:</b> P.H.U SADDAR Dariusz Sadowiński</Text>
+            <Text><b>Wartość projektu:</b> 2 192 893,00 zł</Text>
+            <Text><b>Wartość dofinansowania:</b> 959 605,20 zł</Text>
+
+
+            <Text>Projekt współfinansowany przez Unię Europejską z Europejskiego Funduszu Rozwoju Regionalnego</Text>
+
+            <Text><b>Opis projektu:</b></Text>
+
+            <Text>Przedmiotem projektu realizowanego przez firmę PHU SADDAR jest wdrożenie własnych prac badawczo - rozwojowych objętych dofinansowaniem w ramach
+                działania 1.2 Regionalnego Programu Operacyjnego Województwa Mazowieckiego na lata 2014 -2020 pt. "Innowacyjna gama autorskich ekokotew Saddar
+                o różnych właściwościach i przeznaczeniu".</Text>
+            <Text>Głównym celem projektu jest wzrost konkurencyjności i poszerzenia oferty produktowej P.H.U. SADDAR na rynku.
+            </Text>
+            <Banner alt="" src={banner} />
+        </TextWrapper>
+
+        {/*<SectionSustainabilityPolicy />*/}
     </Wrapper>
   );
 };
@@ -40,63 +64,22 @@ const Home = () => {
 const Wrapper = styled.div`
   max-width: 1200px;
   width: 100%;
-  //display: flex;
-  //flex-direction: column;
-  //align-items: center;
-  //justify-content: center;
 `;
 
+const TextWrapper = styled.div`
+  @media (max-width: 1200px) {
+    padding: 0 30px;
+  }
+`;
+
+const Text = styled.p`
+  font-size: 20px;
+  margin: 20px 0;
+`;
+
+const Banner = styled.img`
+  width: 100%;
+  margin: 20px 0 40px;
+`
+
 export default Home;
-
-{
-  /*Nasza działalność wpisuje się założenia gospodarki obiegu zamkniętego, zwanej inaczej*/
-}
-{
-  /*gospodarką cyrkularną. To model gospodarczy przyszłości, w którym zasoby krążą w*/
-}
-{
-  /*zamkniętym obiegu. Wszystkie produkty wytwarzamy z surowca PET, który pochodzi z*/
-}
-{
-  /*recyklingu plastikowych butelek. Wytworzony w ten kompozyt znajduje zastosowanie w*/
-}
-{
-  /*producji eko kotew o szerokim zastosowaniu w budownictwie. Każdy nasz produkt można*/
-}
-{
-  /*ponownie odzyskać i przetworzyć na kompozyt i dać mu drugie, a nawet trzecie życie.*/
-}
-
-{
-  /*Podobnie w gospodarce cyrkularnej cykl życia produktów jest cyklem zamkniętym,*/
-}
-{
-  /*mogącym powtarzać się – przynajmniej w teorii – w nieskończoność.*/
-}
-{
-  /*Na naszej skończonej planecie surowce mają ograniczone zasoby, a przestrzeń na*/
-}
-{
-  /*wyrzucanie tak po prostu odpadów praktycznie już nie istnieje.*/
-}
-{
-  /*Dziś oprócz ograniczonych zasobów naturalnych, dodatkową granicą, której nie możemy*/
-}
-{
-  /*przekroczyć stały się zmiany klimatu. Gospodarka obiegu zamkniętego jest odpowiedzią*/
-}
-{
-  /*na te wyzwania. W obiegu zamkniętym koniec życia produktu jest zarazem początkiem*/
-}
-{
-  /*życia nowego produktu. Dla naszych eko kotew koniec życia butelki plastikowej jest*/
-}
-{
-  /*początkiem życia dla kompozytu, z którego wytwarzamy produkty o szerokim spektrum*/
-}
-{
-  /*zastosowania. Innymi słowy wszystkie odpady zostają spożytkowane, ich wartość dodana*/
-}
-{
-  /*jest zmaksymalizowana. Na każdą wyprodukowaną eko kotwę zużywamy 20 butelek PET.*/
-}

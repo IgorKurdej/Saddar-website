@@ -9,7 +9,7 @@ import MusicVideoIcon from "@mui/icons-material/MusicVideo";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import { news } from "../../assets/Data";
 import img1 from '../../assets/img/articles/realizacje/saddar2.jpeg'
-import img2 from '../../assets/img/articles/realizacje/zdjęcie 2.jpeg'
+import img2 from '../../assets/img/articles/realizacje/zdj.jpeg'
 import img3 from '../../assets/img/articles/realizacje/slupki-13.jpeg'
 import img4 from '../../assets/img/articles/realizacje/slupki-18.jpeg'
 import img5 from '../../assets/img/articles/realizacje/slupki-19.jpeg'

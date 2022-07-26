@@ -9,8 +9,6 @@ const NewsItemDetails = () => {
   const article = location.state.article;
   const { img, title, contentText } = article;
 
-  console.log(article);
-
   return (
     <>
       {/*<LogoBar />*/}
