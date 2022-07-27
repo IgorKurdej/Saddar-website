@@ -22,7 +22,7 @@ const categories = [
 const Products = () => {
   return (
     <S.Wrapper>
-      <TitleWithIcon title="Kotwy" icon={ShoppingBasketOutlinedIcon} />
+      <TitleWithIcon title="Eko-Kotwy Saddar" icon={ShoppingBasketOutlinedIcon} />
       {/*<S.Categories>*/}
       {/*  {*/}
       {/*    categories.map((category) => (*/}
